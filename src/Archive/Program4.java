@@ -1,4 +1,4 @@
-import java.util.Arrays;
+package Archive;
 import java.util.Scanner;
 
 public class Program4 {

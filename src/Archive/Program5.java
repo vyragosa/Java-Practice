@@ -1,6 +1,6 @@
+package Archive;
 
 import java.util.Arrays;
-import java.util.Random;
 import java.util.Scanner;
 public class Program5 {
     public static int[] remove(int[] arr, int index) {
@@ -10,7 +10,6 @@ public class Program5 {
         return result;
     }
     public static void main(String[] args) {
-        Random random = new Random();
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
         int[] arr = new int[n];

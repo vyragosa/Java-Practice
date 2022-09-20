@@ -1,3 +1,5 @@
+package Archive;
+
 import java.util.Scanner;
 
 public class Program6 {

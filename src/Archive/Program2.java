@@ -1,3 +1,5 @@
+package Archive;
+
 public class Program2 {
     public static void main(String[] args) {
         double res = 1, sum = 0;
