@@ -1,28 +1,28 @@
 package Ex2.Task3;
 
-public class Circle extends Point {
+public class Circle {
+    private Point point;
     public Circle(double x, double y) {
-        setX(x);
-        setY(y);
+        point = new Point(x, y);
+
     }
 
     public Circle() {
-        setX(0.0);
-        setY(0.0);
+        point = new Point(0 , 0);
     }
 
     public void setXY(double x, double y) {
-        setX(x);
-        setY(y);
+        point.setX(x);
+        point.setY(y);
     }
 
     public void move(double xDisp, double yDisp) {
-        setX(getX() + xDisp);
-        setY(getY() + yDisp);
+        point.setX(point.getX() + xDisp);
+        point.setY(point.getY() + yDisp);
     }
 
     @Override
     public String toString() {
-        return "Circle{x: " + getX() + ", y: " + getY() + "}";
+        return "Circle{x: " + point.getX() + ", y: " + point.getY() + "}";
     }
 }
