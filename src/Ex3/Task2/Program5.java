@@ -1,15 +1,12 @@
-package Ex1;
+package Ex3.Task2;
 
 import java.util.Scanner;
 
-public class Program6 {
+public class Program5 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int n = scanner.nextInt();
-        int res = 1;
-        for (int i = 1; i <= n; i++) {
-            res *= i;
-        }
+        double num = scanner.nextDouble();
+        String res = Double.toString(num);
         System.out.println(res);
     }
 }

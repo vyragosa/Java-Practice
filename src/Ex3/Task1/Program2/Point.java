@@ -1,4 +1,4 @@
-package Ex2.Task3;
+package Ex3.Task1.Program2;
 
 public class Point {
     private double x;

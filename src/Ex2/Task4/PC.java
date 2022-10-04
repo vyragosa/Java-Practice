@@ -1,21 +1,21 @@
 package Ex2.Task4;
 
 public class PC {
-	String name;
+    String name;
 
-	PC(String name) {
-		this.name = name;
-	}
+    PC(String name) {
+        this.name = name;
+    }
 
-	public PC() {
-	}
+    public PC() {
+    }
 
-	public String getName() {
-		return name;
-	}
+    public String getName() {
+        return name;
+    }
 
-	@Override
-	public String toString() {
-		return "PC{name: " + name + "}";
-	}
+    @Override
+    public String toString() {
+        return "PC{name: " + name + "}";
+    }
 }
