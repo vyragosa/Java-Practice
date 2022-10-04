@@ -8,6 +8,10 @@ public class CurrencyConverter {
     final double rublesInEuro = 58.;
     final double rublesInYuan = 8.;
 
+    public String ConvertToRubbles(double value) {
+        return convertToLocale(value, new Locale("ru"));
+    }
+
     public String ConvertToUSDollar(double value) {
         return convertToLocale(value / rublesInDollar, Locale.US);
     }
@@ -19,6 +23,7 @@ public class CurrencyConverter {
     public String ConvertToYuan(double value) {
         return convertToLocale(value / rublesInYuan, Locale.US);
     }
+
     public String convertToLocale(double value, Locale locale) {
         return NumberFormat.getCurrencyInstance(locale).format(value);
     }

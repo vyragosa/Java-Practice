@@ -1,6 +1,5 @@
 package Ex3.Task3.Program1;
 
-import java.util.Arrays;
 import java.util.Locale;
 import java.util.Scanner;
 
