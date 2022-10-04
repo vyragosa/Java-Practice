@@ -14,6 +14,6 @@ public class Main {
 			arr[i] = scanner.next();
 		System.out.println(Arrays.toString(arr));
 		Collections.reverse(Arrays.asList(arr));
-
+		System.out.println(Arrays.toString(arr));
 	}
 }
