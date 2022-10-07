@@ -13,9 +13,11 @@ class Person {
 		this.fullName = "Петя";
 		this.age = 21;
 	}
+
 	public void move() {
 		System.out.println(fullName + " идет");
 	}
+
 	public void talk() {
 		System.out.println(fullName + " говорит");
 	}

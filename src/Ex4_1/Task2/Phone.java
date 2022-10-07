@@ -5,18 +5,11 @@ public class Phone {
 	private String model;
 	private double weight;
 
-	public void receiveCall(String name) {
-		System.out.println("звонит " + name);
-	}
-
-	public void receiveCall(String name, int number) {
-		System.out.println("звонит " + name + "с номера " + number);
-	}
-
 	Phone(int number, String model, double weight) {
 		this(number, model);
 		this.weight = weight;
 	}
+
 	Phone(int number, String model) {
 		this.number = number;
 		this.model = model;
@@ -26,6 +19,14 @@ public class Phone {
 		this.number = 7812;
 		this.model = "huawei";
 		this.weight = 74.4;
+	}
+
+	public void receiveCall(String name) {
+		System.out.println("звонит " + name);
+	}
+
+	public void receiveCall(String name, int number) {
+		System.out.println("звонит " + name + "с номера " + number);
 	}
 
 	public int getNumber() {

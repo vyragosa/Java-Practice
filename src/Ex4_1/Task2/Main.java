@@ -14,7 +14,7 @@ class Main {
 		phone1.receiveCall("Ваня", 8445);
 		phone2.receiveCall("Саша", 8646);
 		phone3.receiveCall("Петя", 8764);
-		phone1.sendMessage(6123,817,7821,812,8123,1512,18237);
+		phone1.sendMessage(6123, 817, 7821, 812, 8123, 1512, 18237);
 	}
 
 

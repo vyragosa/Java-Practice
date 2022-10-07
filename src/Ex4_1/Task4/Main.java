@@ -2,7 +2,7 @@ package Ex4_1.Task4;
 
 class Main {
 	public static void main(String[] args) {
-		Matrix matrix1 = new Matrix(3,3);
+		Matrix matrix1 = new Matrix(3, 3);
 		matrix1.printMatrix();
 		Matrix matrix2 = new Matrix(3, 3);
 		matrix2.printMatrix();
