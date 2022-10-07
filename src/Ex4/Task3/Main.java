@@ -5,5 +5,6 @@ public class Main {
         Shop shop = new Shop();
         shop.outputSpec();
         shop.inputSpec();
+        shop.printDevices();
     }
 }

@@ -13,11 +13,11 @@ public enum Specification {
 
     NORMAL("Обычный товар");
 
+    private final String description;
+
     Specification(String description) {
         this.description = description;
     }
-
-    private final String description;
 
     String getDescription() {
         return description;
@@ -30,6 +30,6 @@ public enum Specification {
 
     @Override
     public String toString() {
-        return name() + "{" + getDescription()  + ", "+ isAvailable() + "}";
+        return name() + "{" + getDescription() + ", " + isAvailable() + "}";
     }
 }
