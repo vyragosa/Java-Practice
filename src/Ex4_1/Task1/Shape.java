@@ -1,14 +1,18 @@
 package Ex4_1.Task1;
 
-abstract class Shape {
+class Shape {
 	protected String type;
 	protected double area;
 	public double perimeter;
 	public String getType() {
 		return type;
 	}
-	abstract public void getArea();
-	abstract public void  getPerimeter();
+	public void getArea() {
+
+	};
+	public void  getPerimeter() {
+
+	};
 
 	@Override
 	public String toString() {
