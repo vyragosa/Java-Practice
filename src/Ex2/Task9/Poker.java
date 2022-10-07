@@ -2,7 +2,7 @@ package Ex2.Task9;
 
 import java.util.Scanner;
 
-public class Poker {
+class Poker {
 	public static void main(String[] args) {
 		String[] suits = {"Пик", "Бубен", "Червь", "Треф"};
 		String[] rank = {"2", "3", "4", "5", "6", "7", "8", "9", "10", "Валет", "Королева", "Король", "Туз"};

@@ -1,6 +1,6 @@
 package Ex2.Task4;
 
-public class PC {
+class PC {
 	String name;
 
 	PC(String name) {

@@ -1,6 +1,6 @@
 package Ex4.Task2;
 
-public enum ClothingSize {
+enum ClothingSize {
 	XXS(32) {
 		@Override
 		public String getDescription() {

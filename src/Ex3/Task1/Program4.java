@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Program4 {
+class Program4 {
 	public static void main(String[] args) {
 		final int fix_size = 100;
 		int n, secondSize = 0;

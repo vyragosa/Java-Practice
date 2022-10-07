@@ -1,6 +1,6 @@
 package Ex4.Task3;
 
-public enum User {
+enum User {
 	LOGIN("admin"),
 	PASSWORD("123123");
 	private final String data;

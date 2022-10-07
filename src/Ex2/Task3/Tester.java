@@ -1,6 +1,6 @@
 package Ex2.Task3;
 
-public class Tester {
+class Tester {
 	private Circle[] arr;
 	private int size;
 

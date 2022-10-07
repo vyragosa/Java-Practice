@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.Scanner;
 
-public class Tester {
+class Tester {
 	private Circle[] arr;
 	private int size;
 

@@ -1,6 +1,6 @@
 package Ex4.Task4;
 
-public class Processor {
+class Processor {
 	private final String processor;
 
 	Processor(String processor) {

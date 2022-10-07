@@ -3,7 +3,7 @@ package Ex3.Task3.Program1;
 import java.text.NumberFormat;
 import java.util.Locale;
 
-public class CurrencyConverter {
+class CurrencyConverter {
 	final double rublesInDollar = 59.;
 	final double rublesInEuro = 58.;
 	final double rublesInYuan = 8.;

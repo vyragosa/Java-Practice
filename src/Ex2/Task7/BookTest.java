@@ -1,6 +1,6 @@
 package Ex2.Task7;
 
-public class BookTest {
+class BookTest {
 	public static void main(String[] args) {
 		Bookshelf bookshelf = new Bookshelf();
 		System.out.println(bookshelf.toString());

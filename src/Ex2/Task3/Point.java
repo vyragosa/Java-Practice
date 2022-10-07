@@ -1,6 +1,6 @@
 package Ex2.Task3;
 
-public class Point {
+class Point {
 	private double x;
 	private double y;
 

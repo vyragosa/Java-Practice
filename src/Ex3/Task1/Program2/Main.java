@@ -1,6 +1,6 @@
 package Ex3.Task1.Program2;
 
-public class Main {
+class Main {
 	public static void main(String[] args) {
 		Tester tester = new Tester();
 		System.out.println(tester.toString());

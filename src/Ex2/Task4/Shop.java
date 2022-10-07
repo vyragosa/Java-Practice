@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 
-public class Shop {
+class Shop {
 	private ArrayList<PC> listPC = new ArrayList<PC>();
 
 	public void build() {

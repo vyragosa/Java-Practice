@@ -3,7 +3,7 @@ package Ex3.Task3.Program1;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class Main {
+class Main {
 	public static void main(String[] args) {
 		Locale[] locales = Locale.getAvailableLocales();
 		Scanner scanner = new Scanner(System.in);

@@ -1,6 +1,6 @@
 package Ex4.Task3;
 
-public enum Specification {
+enum Specification {
 	DISCOUNT("Товар по скидке"),
 	LAST("Последний товар"),
 	SHOWCASE("Витринный образец"),

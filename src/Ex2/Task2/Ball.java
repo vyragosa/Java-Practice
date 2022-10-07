@@ -1,6 +1,6 @@
 package Ex2.Task2;
 
-public class Ball {
+class Ball {
 	private double x;
 	private double y;
 

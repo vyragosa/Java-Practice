@@ -1,6 +1,6 @@
 package Ex4.Task2;
 
-public abstract class Clothes {
+abstract class Clothes {
 	private final ClothingSize size;
 	private final int cost;
 	private final String color;

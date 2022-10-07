@@ -2,7 +2,7 @@ package Ex3.Task4;
 
 import java.util.Scanner;
 
-public class Report {
+class Report {
 	private Employee[] employees;
 
 	public Report() {

@@ -1,6 +1,6 @@
 package Ex2.Task6;
 
-public class Circle {
+class Circle {
 	private double s;
 	private double l;
 	private double r;

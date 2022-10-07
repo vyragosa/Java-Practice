@@ -2,7 +2,7 @@ package Archive;
 
 import java.util.Scanner;
 
-public class Program6 {
+class Program6 {
 	public static void main(String[] args) {
 		int n0 = 0;
 		int n1 = 1, n2 = 1;

@@ -1,6 +1,6 @@
 package Ex2.Task3;
 
-public class Circle {
+class Circle {
 	private Point point;
 
 	public Circle(double x, double y) {

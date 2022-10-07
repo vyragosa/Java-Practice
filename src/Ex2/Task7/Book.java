@@ -1,6 +1,6 @@
 package Ex2.Task7;
 
-public class Book {
+class Book {
 	private String name;
 	private int year;
 

@@ -2,7 +2,7 @@ package Ex3.Task3.Program2;
 
 import java.util.Scanner;
 
-public class onlineStore {
+class onlineStore {
 	public static void main(String[] args) {
 		CurrencyConverter currencyConverter = new CurrencyConverter();
 		Scanner scanner = new Scanner(System.in);

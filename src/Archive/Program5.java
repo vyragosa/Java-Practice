@@ -3,7 +3,7 @@ package Archive;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Program5 {
+class Program5 {
 	public static int[] remove(int[] arr, int index) {
 		int[] result = new int[arr.length - 1];
 		System.arraycopy(arr, 0, result, 0, index);

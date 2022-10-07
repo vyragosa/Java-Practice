@@ -2,7 +2,7 @@ package Ex2.Task1;
 
 import java.util.Scanner;
 
-public class TestAuthor {
+class TestAuthor {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 

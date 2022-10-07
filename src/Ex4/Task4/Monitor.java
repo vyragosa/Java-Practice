@@ -1,6 +1,6 @@
 package Ex4.Task4;
 
-public class Monitor {
+class Monitor {
 	private final String monitor;
 
 	Monitor(String monitor) {

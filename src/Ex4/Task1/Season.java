@@ -1,6 +1,6 @@
 package Ex4.Task1;
 
-public enum Season {
+enum Season {
 	WINTER(-15),
 	SPRING(10),
 	SUMMER(30) {

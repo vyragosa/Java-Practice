@@ -1,6 +1,6 @@
 package Ex2.Task5;
 
-public class Dog {
+class Dog {
 	private String name;
 	private int age;
 

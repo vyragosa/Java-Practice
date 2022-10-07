@@ -1,6 +1,6 @@
 package Ex1;
 
-public class Program4 {
+class Program4 {
 	public static void main(String[] args) {
 		double res = 1, sum = 0;
 		for (int i = 0; i < 10; i++) {

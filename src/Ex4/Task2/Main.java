@@ -1,6 +1,6 @@
 package Ex4.Task2;
 
-public class Main {
+class Main {
 	public static void main(String[] args) {
 		Clothes[] clothes = {
 				new TShirt(ClothingSize.XS, 120, "Синий"),

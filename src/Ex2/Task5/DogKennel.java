@@ -3,7 +3,7 @@ package Ex2.Task5;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class DogKennel {
+class DogKennel {
 	private ArrayList<Dog> listDogs = new ArrayList<Dog>();
 
 	public void addDog() {

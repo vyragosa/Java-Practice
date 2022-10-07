@@ -1,6 +1,6 @@
 package Ex4.Task4;
 
-public class Memory {
+class Memory {
 	private final String memory;
 
 	Memory(String memory) {

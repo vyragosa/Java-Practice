@@ -1,6 +1,6 @@
 package Ex4.Task4;
 
-public enum ComputerMark {
+enum ComputerMark {
 	MARK1("Memory1", "Monitor1", "Processor1"),
 	MARK2("Memory2", "Monitor2", "Processor2"),
 	MARK3("Memory3", "Monitor3", "Processor3");

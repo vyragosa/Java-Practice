@@ -1,6 +1,6 @@
 package Ex4.Task2;
 
-public class Atelier implements MenClothing, WomenClothing {
+class Atelier implements MenClothing, WomenClothing {
 
 	@Override
 	public void dressMan(Clothes[] clothes) {

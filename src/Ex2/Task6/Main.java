@@ -2,7 +2,7 @@ package Ex2.Task6;
 
 import java.util.Scanner;
 
-public class Main {
+class Main {
 	public static void main(String[] args) {
 		System.out.println("Enter r of the first circle");
 		Scanner scanner = new Scanner(System.in);

@@ -2,7 +2,7 @@ package Ex3.Task2;
 
 import java.util.Scanner;
 
-public class Program3 {
+class Program3 {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		Double value = scanner.nextDouble();

@@ -1,6 +1,6 @@
 package Ex2.Task1;
 
-public class Author {
+class Author {
 	private String name;
 	private String email;
 	private char gender;

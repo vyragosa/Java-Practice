@@ -1,6 +1,6 @@
 package Ex3.Task4;
 
-public class Employee {
+class Employee {
 	private String fullName;
 	private double salary;
 

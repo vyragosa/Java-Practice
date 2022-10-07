@@ -1,7 +1,7 @@
 package Ex3.Task1.Program2;
 
 
-public class Circle {
+class Circle {
 	private Point point;
 	private double l;
 	private double r;

@@ -3,7 +3,7 @@ package Ex4.Task3;
 import java.util.Objects;
 import java.util.Scanner;
 
-public class Shop implements InputDevice, OutputDevice {
+class Shop implements InputDevice, OutputDevice {
 	Device[] device;
 
 	Shop() {

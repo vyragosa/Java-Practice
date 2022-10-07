@@ -1,6 +1,6 @@
 package Ex4.Task3;
 
-public abstract class Device {
+abstract class Device {
 	private final int cost;
 	private final String color;
 

@@ -1,6 +1,6 @@
 package Ex4.Task4;
 
-public class Computer {
+class Computer {
 	private final Memory memory;
 	private final Monitor monitor;
 	private final Processor processor;
