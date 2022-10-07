@@ -12,11 +12,17 @@ public enum ClothingSize {
 	M(38),
 	L(40);
 
+	private int euroSize;
 	ClothingSize(int euroSize) {
-		
+		this.euroSize = euroSize;
 	}
 
 	public String getDescription() {
 		return "Взрослый размер";
+	}
+
+	@Override
+	public String toString() {
+		return name() + "{размер: " + euroSize + ", описание: " + getDescription() + "}";
 	}
 }
