@@ -4,6 +4,7 @@ public class Computer {
 	private final Memory memory;
 	private final Monitor monitor;
 	private final Processor processor;
+
 	public Computer(String memory, String monitor, String processor) {
 		this.memory = new Memory(memory);
 		this.monitor = new Monitor(monitor);
