@@ -13,6 +13,7 @@ public enum ClothingSize {
 	L(40);
 
 	private int euroSize;
+
 	ClothingSize(int euroSize) {
 		this.euroSize = euroSize;
 	}
