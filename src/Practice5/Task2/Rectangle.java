@@ -17,9 +17,9 @@ class Rectangle extends Shape {
 	public void paint(Graphics g) {
 		super.paint(g);
 		Random random = new Random();
-		if(filled)
-			g.fillRect(random.nextInt(0, 40), random.nextInt(0, 40),width, length);
+		if (filled)
+			g.fillRect(random.nextInt(0, 40), random.nextInt(0, 40), width, length);
 		else
-			g.drawRect(random.nextInt(0, 40), random.nextInt(0, 40),width,length);
+			g.drawRect(random.nextInt(0, 40), random.nextInt(0, 40), width, length);
 	}
 }

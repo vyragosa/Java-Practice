@@ -15,9 +15,9 @@ class Square extends Shape {
 	public void paint(Graphics g) {
 		super.paint(g);
 		Random random = new Random();
-		if(filled)
-			g.fillRect(random.nextInt(0, 40), random.nextInt(0, 40),side, side);
+		if (filled)
+			g.fillRect(random.nextInt(0, 40), random.nextInt(0, 40), side, side);
 		else
-			g.drawRect(random.nextInt(0, 40), random.nextInt(0, 40),side, side);
+			g.drawRect(random.nextInt(0, 40), random.nextInt(0, 40), side, side);
 	}
 }

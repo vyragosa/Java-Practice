@@ -16,9 +16,9 @@ class Circle extends Shape {
 	public void paint(Graphics g) {
 		Random random = new Random();
 		super.paint(g);
-		if(filled)
-			g.fillOval(random.nextInt(0, 40), random.nextInt(0, 40) , radius, radius);
+		if (filled)
+			g.fillOval(random.nextInt(0, 40), random.nextInt(0, 40), radius, radius);
 		else
-			g.drawOval(random.nextInt(0, 40), random.nextInt(0, 40),radius, radius);
+			g.drawOval(random.nextInt(0, 40), random.nextInt(0, 40), radius, radius);
 	}
 }

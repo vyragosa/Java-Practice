@@ -1,4 +1,5 @@
 package Practice5.Task1;
+
 import javax.swing.*;
 
 class Main extends JFrame {

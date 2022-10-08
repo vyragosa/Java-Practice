@@ -9,7 +9,7 @@ class DrawGUI extends JFrame {
 		super("Draw GUI");
 		setSize(650, 650);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setLayout(new GridLayout(4,5));
+		setLayout(new GridLayout(4, 5));
 
 		Random random = new Random();
 		for (int i = 0; i < 20; i++) {
