@@ -1,7 +1,7 @@
 package Ex4_1.Task1;
 
-class Shape {
-	public double perimeter;
+abstract class Shape {
+	protected double perimeter;
 	protected String type;
 	protected double area;
 
@@ -9,15 +9,11 @@ class Shape {
 		return type;
 	}
 
-	public void getArea() {
-
-	}
+	abstract public void getArea();
 
 	;
 
-	public void getPerimeter() {
-
-	}
+	abstract public void getPerimeter();
 
 	;
 

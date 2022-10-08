@@ -1,21 +1,23 @@
 package Ex4_1.Task1;
 
 class Rectangle extends Shape {
-	private final double side;
+	private final double width;
+	private final double height;
 
-	Rectangle(double side) {
-		this.side = side;
-		this.type = "Треугольник";
+	Rectangle(double width, double height) {
+		this.width = width;
+		this.height = height;
+		this.type = "Прямоугольник";
 	}
 
 
 	@Override
 	public void getArea() {
-		this.area = (side * side * Math.sqrt(3.)) / 4.;
+		this.area = height * width;
 	}
 
 	@Override
 	public void getPerimeter() {
-		this.perimeter = side * 3.;
+		this.perimeter = height * 2 + width * 2;
 	}
 }
