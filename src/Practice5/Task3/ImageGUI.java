@@ -1,10 +1,9 @@
-package Practice5.Task2;
+package Practice5.Task3;
 
 import javax.swing.*;
 
 class ImageGUI extends JFrame{
-	ImageGUI(String args)
-	{
+	ImageGUI(String args) {
 		super(args);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setSize(640,680);
