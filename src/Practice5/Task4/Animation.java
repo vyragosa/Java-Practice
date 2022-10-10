@@ -9,8 +9,7 @@ class Animation extends JFrame {
 			new ImageIcon(Objects.requireNonNull(getClass().getResource("img_1.png"))),
 			new ImageIcon(Objects.requireNonNull(getClass().getResource("img_2.png"))),
 			new ImageIcon(Objects.requireNonNull(getClass().getResource("img_3.png"))),
-			new ImageIcon(Objects.requireNonNull(getClass().getResource("img_4.png"))),
-			new ImageIcon(Objects.requireNonNull(getClass().getResource("img_5.png"))),
+			new ImageIcon(Objects.requireNonNull(getClass().getResource("img_4.png")))
 	};
 	JLabel image;
 	int iter;
@@ -20,9 +19,7 @@ class Animation extends JFrame {
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setSize(1000, 1100);
 
-
 		getContentPane().add(image = new JLabel(imageIcon[iter]));
-
 		Timer timer = new Timer(200, e -> showImages());
 		timer.start();
 
@@ -32,7 +29,7 @@ class Animation extends JFrame {
 
 	private void showImages() {
 		image.setIcon(imageIcon[iter]);
-		if (iter == 4) iter = 0;
+		if (iter >= 3) iter = 0;
 		else iter++;
 	}
 

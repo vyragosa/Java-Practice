@@ -16,10 +16,10 @@ class Report {
 	}
 
 	public void generateReport() {
-		System.out.println("------------------------Generated report-------------------------");
+		System.out.println("------------------------Generated report------------------------");
 		for (int i = 0; i < employees.length; i++) {
-			System.out.printf("%1$-32s %2$32.2f%n", employees[i].getFullName(), employees[i].getSalary());
+			System.out.printf("%1$-32s%2$32.2f%n", employees[i].getFullName(), employees[i].getSalary());
 		}
-		System.out.println("-----------------------------------------------------------------");
+		System.out.println("----------------------------------------------------------------");
 	}
 }

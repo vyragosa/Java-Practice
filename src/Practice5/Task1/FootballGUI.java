@@ -29,8 +29,9 @@ class FootballGUI extends JFrame {
 		buttonPanel.setLayout(new GridLayout(1, 2));
 		labelPanel.setLayout(new GridLayout(1, 3));
 
-		buttonPanel.add(realMadridButton = new JButton("Real Madrid"));
 		buttonPanel.add(ACMilanButton = new JButton("AC Milan"));
+		buttonPanel.add(realMadridButton = new JButton("Real Madrid"));
+
 		labelPanel.add(lastScorer = new JLabel("Last Scorer:", JLabel.CENTER));
 		labelPanel.add(result = new JLabel("Result 0X0", JLabel.CENTER));
 		labelPanel.add(winner = new JLabel("Winner: DRAW", JLabel.CENTER));
