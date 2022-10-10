@@ -17,11 +17,11 @@ class CurrencyConverter {
 	}
 
 	public String ConvertToEuro(double value) {
-		return convertToLocale(value / rublesInEuro, Locale.US);
+		return convertToLocale(value / rublesInEuro, Locale.GERMANY);
 	}
 
 	public String ConvertToYuan(double value) {
-		return convertToLocale(value / rublesInYuan, Locale.US);
+		return convertToLocale(value / rublesInYuan, Locale.CHINA);
 	}
 
 	public String convertToLocale(double value, Locale locale) {
