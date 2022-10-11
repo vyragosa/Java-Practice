@@ -22,7 +22,6 @@ class Animation extends JFrame {
 		getContentPane().add(image = new JLabel(imageIcon[iter]));
 		Timer timer = new Timer(200, e -> showImages());
 		timer.start();
-
 		setVisible(true);
 
 	}
