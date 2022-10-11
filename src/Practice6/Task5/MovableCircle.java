@@ -1,12 +1,11 @@
-package Practice6.Task1;
+package Practice6.Task5;
 
-class MovableCircle implements Movable {
-	private int radius;
-	private MovablePoint center;
+class MovableCircle extends Circle implements Movable {
+	MovablePoint center;
 
 	public MovableCircle(int x, int y, int xSpeed, int ySpeed, int radius) {
-		this.center = new MovablePoint(x, y, xSpeed, ySpeed);
-		this.radius = radius;
+		super(radius);
+		center = new MovablePoint(1, 2, 5, 6);
 	}
 
 	@Override
@@ -32,8 +31,10 @@ class MovableCircle implements Movable {
 	@Override
 	public String toString() {
 		return "MovableCircle{" +
-				"radius=" + radius +
-				", center=" + center +
+				"center=" + center +
+				", radius=" + radius +
+				", color='" + color + '\'' +
+				", filled=" + filled +
 				'}';
 	}
 }

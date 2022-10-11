@@ -1,4 +1,4 @@
-package Practice6.Task2;
+package Practice6.Task5;
 
 interface Movable {
 	void moveUp();

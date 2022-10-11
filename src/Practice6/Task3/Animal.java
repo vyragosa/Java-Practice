@@ -1,9 +1,9 @@
 package Practice6.Task3;
 
-class Planet implements Nameable {
-	private String name;
+class Animal implements Nameable {
+	String name;
 
-	public Planet(String name) {
+	public Animal(String name) {
 		this.name = name;
 	}
 

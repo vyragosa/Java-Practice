@@ -1,14 +1,11 @@
-package Practice6.Task2;
+package Practice6.Task5;
 
-class MovablePoint implements Movable {
-	private final int xSpeed;
-	private final int ySpeed;
-	private int x;
-	private int y;
+class MovablePoint extends Point implements Movable {
+	protected int xSpeed;
+	protected int ySpeed;
 
 	public MovablePoint(int x, int y, int xSpeed, int ySpeed) {
-		this.x = x;
-		this.y = y;
+		super(x, y);
 		this.xSpeed = xSpeed;
 		this.ySpeed = ySpeed;
 	}
@@ -44,10 +41,10 @@ class MovablePoint implements Movable {
 	@Override
 	public String toString() {
 		return "MovablePoint{" +
-				"x=" + x +
-				", y=" + y +
-				", xSpeed=" + xSpeed +
+				"xSpeed=" + xSpeed +
 				", ySpeed=" + ySpeed +
+				", x=" + x +
+				", y=" + y +
 				'}';
 	}
 }

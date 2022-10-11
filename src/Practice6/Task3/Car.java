@@ -1,6 +1,6 @@
 package Practice6.Task3;
 
-public class Car implements Nameable{
+class Car implements Nameable {
 	private String name;
 
 	public Car(String name) {

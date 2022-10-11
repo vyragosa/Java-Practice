@@ -1,5 +1,5 @@
 package Practice6.Task3;
 
-public interface Nameable {
+interface Nameable {
 	String getName();
 }
