@@ -7,6 +7,7 @@ class MyStringBuilder {
 
 	private StringBuilder stringBuilder;
 	private Stack<Action> actions;
+
 	public MyStringBuilder() {
 		this.stringBuilder = new StringBuilder();
 		this.actions = new Stack<>();
