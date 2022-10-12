@@ -1,6 +1,6 @@
 package Practice6.Task1;
 
-public class Main {
+class Main {
 	public static void main(String[] args) {
 		Movable figure = new MovablePoint(4, 3, 5, 6);
 		figure.moveRight();
