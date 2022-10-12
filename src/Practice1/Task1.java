@@ -2,7 +2,7 @@ package Practice1;
 
 import java.util.Scanner;
 
-class Program1 {
+class Task1 {
 	public static void main(String[] args) {
 		int sum = 0;
 		Scanner scanner = new Scanner(System.in);

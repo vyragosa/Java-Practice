@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
-class Program5 {
+class Task5 {
 	public static void main(String[] args) {
 		Random random = new Random();
 		Scanner scanner = new Scanner(System.in);
