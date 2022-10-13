@@ -1,7 +1,7 @@
-package Practice12.Task4;
+package Practice12.Task1;
 
 class Main {
 	public static void main(String[] args) {
-		new Animation();
+		DrawGUI frame = new DrawGUI();
 	}
 }

@@ -1,4 +1,4 @@
-package Practice12.Task4;
+package Practice12.Task3;
 
 import javax.swing.*;
 import java.util.Objects;
