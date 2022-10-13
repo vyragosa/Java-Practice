@@ -1,4 +1,4 @@
-package Practice5.Task3;
+package Practice12.Task3;
 
 import javax.swing.*;
 

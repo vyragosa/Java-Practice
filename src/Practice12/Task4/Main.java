@@ -1,4 +1,4 @@
-package Practice5.Task4;
+package Practice12.Task4;
 
 class Main {
 	public static void main(String[] args) {
