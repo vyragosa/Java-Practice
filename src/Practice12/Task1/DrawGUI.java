@@ -18,7 +18,7 @@ class DrawGUI extends JFrame {
 				add(new Circle(new Point(random.nextInt(0, 100), random.nextInt(0, 100)),
 						random.nextInt(50, 100),
 						new Color(random.nextFloat(), random.nextFloat(), random.nextFloat()),
-						random.nextInt(0, 10) > 5), JLayeredPane.POPUP_LAYER);
+						random.nextInt(0, 2) > 0), JLayeredPane.POPUP_LAYER);
 			else if (x == 1)
 				add(new Rectangle(new Point(random.nextInt(0, 100), random.nextInt(0, 100)),
 						random.nextInt(50, 100), random.nextInt(50, 100),
