@@ -1,6 +1,6 @@
 package Practice13.Task2;
 
-public class Person {
+class Person {
 	private final String firstName;
 	private final String secondName;
 	private final String patronymic;
