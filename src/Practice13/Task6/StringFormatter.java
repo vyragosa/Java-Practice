@@ -5,7 +5,6 @@ import java.util.Arrays;
 
 class StringFormatter {
 	public static String getLine(String str) {
-
 		ArrayList<String> stringArrayList = new ArrayList<>(Arrays.asList(str.split(" ")));
 		String temp = stringArrayList.get(0);
 		StringBuilder result = new StringBuilder(temp).append(" ");
