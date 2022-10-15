@@ -13,7 +13,7 @@ public class Address {
 
 	public void useSplit(String address) {
 		String[] array = address.split(",");
-		if (array.length> 7)
+		if (array.length > 7)
 			throw new RuntimeException("Wrong address!");
 		this.country = array[0];
 		this.region = array[1];

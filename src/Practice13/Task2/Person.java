@@ -12,6 +12,6 @@ class Person {
 	}
 
 	String getName() {
-		return String.join(" ", firstName , secondName, patronymic);
+		return String.join(" ", firstName, secondName, patronymic);
 	}
 }
