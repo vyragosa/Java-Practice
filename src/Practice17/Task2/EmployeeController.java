@@ -33,7 +33,7 @@ public class EmployeeController {
 		this.model.setCoefficient(coefficient);
 	}
 
-	public void updateView(){
+	public void updateView() {
 		view.displayDataEmployee(model.getName(), model.getSalary());
 	}
 }

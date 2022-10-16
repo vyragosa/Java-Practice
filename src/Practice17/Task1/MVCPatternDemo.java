@@ -6,7 +6,7 @@ public class MVCPatternDemo {
 		controller.updateView();
 	}
 
-	public static Student retreiveStudentFromDatabase(){
+	public static Student retreiveStudentFromDatabase() {
 		Student student = new Student();
 		student.setName("Иван");
 		student.setRollNo("???");

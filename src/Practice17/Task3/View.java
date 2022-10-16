@@ -4,12 +4,12 @@ import javax.swing.*;
 import java.awt.*;
 
 
-public class View extends JFrame{
+public class View extends JFrame {
 
 
-	private JLabel label;
-	private JTextField text;
-	private JButton button;
+	private final JLabel label;
+	private final JTextField text;
+	private final JButton button;
 
 	public View() {
 		super("Draw GUI");
@@ -26,7 +26,7 @@ public class View extends JFrame{
 		label.setText(str);
 	}
 
-	public String getInputText(){
+	public String getInputText() {
 		return text.getText();
 	}
 

@@ -7,7 +7,7 @@ public class Main {
 		controller.updateView();
 	}
 
-	public static void retrieveDataFromDatabase(EmployeeController controller){
+	public static void retrieveDataFromDatabase(EmployeeController controller) {
 		controller.setName("Иван");
 		controller.setWorkHours(69);
 		controller.setCoefficient(13);

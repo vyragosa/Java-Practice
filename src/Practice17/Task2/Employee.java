@@ -29,7 +29,7 @@ public class Employee {
 		this.coefficient = coefficient;
 	}
 
-	public double getSalary(){
+	public double getSalary() {
 		return coefficient * workHours;
 	}
 }
