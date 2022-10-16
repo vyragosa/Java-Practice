@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 class DogKennel {
-	private ArrayList<Dog> listDogs = new ArrayList<Dog>();
+	private final ArrayList<Dog> listDogs = new ArrayList<Dog>();
 
 	public void addDog() {
 		System.out.println("Enter dog name and dog age");

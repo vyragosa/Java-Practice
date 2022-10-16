@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 
 class Shop {
-	private ArrayList<PC> listPC = new ArrayList<PC>();
+	private final ArrayList<PC> listPC = new ArrayList<PC>();
 
 	public void build() {
 		int menu = 1;
@@ -33,7 +33,7 @@ class Shop {
 			}
 			if (menu == 4) {
 				System.out.println("List of PCs");
-				System.out.println(toString());
+				System.out.println(this);
 			}
 			System.out.println();
 		}
@@ -41,7 +41,7 @@ class Shop {
 
 	@Override
 	public String toString() {
-		return listPC.toString().toString();
+		return listPC.toString();
 	}
 
 	private String searchElement(String name) {

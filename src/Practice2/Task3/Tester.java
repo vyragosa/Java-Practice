@@ -1,8 +1,8 @@
 package Practice2.Task3;
 
 class Tester {
-	private Circle[] arr;
-	private int size;
+	private final Circle[] arr;
+	private final int size;
 
 	public Tester(int size) {
 		this.size = size;
