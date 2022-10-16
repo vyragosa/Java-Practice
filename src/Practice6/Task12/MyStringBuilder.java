@@ -5,8 +5,8 @@ import java.util.Stack;
 class MyStringBuilder {
 
 
-	private StringBuilder stringBuilder;
-	private Stack<Action> actions;
+	private final StringBuilder stringBuilder;
+	private final Stack<Action> actions;
 
 	public MyStringBuilder() {
 		this.stringBuilder = new StringBuilder();

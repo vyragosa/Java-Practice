@@ -4,15 +4,15 @@ import javax.swing.*;
 import java.awt.*;
 
 class Calculator extends JFrame {
-	private JPanel[] panel;
-	private JButton buttonAdd;
-	private JButton buttonSub;
-	private JButton buttonDiv;
-	private JButton buttonMul;
-	private JLabel labelFirstNumber;
-	private JLabel labelSecondNumber;
-	private JTextField textFirstNumber;
-	private JTextField textSecondNumber;
+	private final JPanel[] panel;
+	private final JButton buttonAdd;
+	private final JButton buttonSub;
+	private final JButton buttonDiv;
+	private final JButton buttonMul;
+	private final JLabel labelFirstNumber;
+	private final JLabel labelSecondNumber;
+	private final JTextField textFirstNumber;
+	private final JTextField textSecondNumber;
 
 	public Calculator() {
 		super("Калькулятор");

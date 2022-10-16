@@ -7,10 +7,10 @@ import java.util.Locale;
 import java.util.Objects;
 
 class CountriesGUI extends JFrame {
-	private JComboBox<Country> comboBox;
-	private JLabel textInfo;
-	private JPanel panelBox;
-	private JPanel panelTextInfo;
+	private final JComboBox<Country> comboBox;
+	private final JLabel textInfo;
+	private final JPanel panelBox;
+	private final JPanel panelTextInfo;
 
 	public CountriesGUI() {
 		super("Страны");

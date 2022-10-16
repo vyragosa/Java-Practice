@@ -2,8 +2,8 @@ package Practice6.Task13;
 
 class MyStringBuilder {
 
-	private Observer onChangeListener;
-	private StringBuilder stringBuilder;
+	private final Observer onChangeListener;
+	private final StringBuilder stringBuilder;
 
 	public MyStringBuilder() {
 		this.onChangeListener = new Listener();

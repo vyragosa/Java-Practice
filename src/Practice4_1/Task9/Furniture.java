@@ -1,7 +1,7 @@
 package Practice4_1.Task9;
 
 abstract class Furniture {
-	private String name;
+	private final String name;
 
 	public Furniture(String name) {
 		this.name = name;

@@ -7,7 +7,6 @@ public class Shop {
 			new Book("Книга 2"),
 			new Book("Журнал 2")
 	};
-	;
 
 	public static void print() {
 		Book.print(shopList);

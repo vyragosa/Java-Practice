@@ -6,14 +6,14 @@ import java.awt.event.ActionEvent;
 
 class FootballGUI extends JFrame {
 
-	private JLabel lastScorer;
-	private JLabel result;
-	private JLabel winner;
+	private final JLabel lastScorer;
+	private final JLabel result;
+	private final JLabel winner;
 
-	private JButton realMadridButton;
-	private JButton ACMilanButton;
-	private JPanel buttonPanel;
-	private JPanel labelPanel;
+	private final JButton realMadridButton;
+	private final JButton ACMilanButton;
+	private final JPanel buttonPanel;
+	private final JPanel labelPanel;
 	private int realMadridScore = 0;
 	private int ACMilanScore = 0;
 

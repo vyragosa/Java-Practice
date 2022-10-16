@@ -4,19 +4,19 @@ import javax.swing.*;
 import java.awt.*;
 
 class Redactor extends JFrame {
-	private JTextArea textArea;
+	private final JTextArea textArea;
 
-	private JMenuBar jMenuBar;
-	private JMenu jMenuColors;
-	private JMenu jMenuFonts;
+	private final JMenuBar jMenuBar;
+	private final JMenu jMenuColors;
+	private final JMenu jMenuFonts;
 
-	private JMenuItem jMenuItemBlue;
-	private JMenuItem jMenuItemRed;
-	private JMenuItem jMenuItemBlack;
+	private final JMenuItem jMenuItemBlue;
+	private final JMenuItem jMenuItemRed;
+	private final JMenuItem jMenuItemBlack;
 
-	private JMenuItem jMenuItemTimes;
-	private JMenuItem jMenuItemSans;
-	private JMenuItem jMenuItemCourier;
+	private final JMenuItem jMenuItemTimes;
+	private final JMenuItem jMenuItemSans;
+	private final JMenuItem jMenuItemCourier;
 
 	public Redactor() {
 		super("Редактор");

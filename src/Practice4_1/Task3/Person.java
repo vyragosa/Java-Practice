@@ -1,8 +1,8 @@
 package Practice4_1.Task3;
 
 class Person {
-	private String fullName;
-	private int age;
+	private final String fullName;
+	private final int age;
 
 	public Person(String fullName, int age) {
 		this.fullName = fullName;

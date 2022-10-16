@@ -6,11 +6,11 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 class District extends JFrame {
-	private JPanel center;
-	private JPanel west;
-	private JPanel east;
-	private JPanel south;
-	private JPanel north;
+	private final JPanel center;
+	private final JPanel west;
+	private final JPanel east;
+	private final JPanel south;
+	private final JPanel north;
 
 	public District() {
 		super("Округи");
