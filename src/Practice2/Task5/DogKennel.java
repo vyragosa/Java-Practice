@@ -14,7 +14,7 @@ class DogKennel {
 
 	@Override
 	public String toString() {
-		return listDogs.toString().toString();
+		return listDogs.toString();
 	}
 
 }
