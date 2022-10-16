@@ -1,8 +1,8 @@
 package Practice6.Task1;
 
 class MovableCircle implements Movable {
-	private int radius;
-	private MovablePoint center;
+	private final int radius;
+	private final MovablePoint center;
 
 	public MovableCircle(int x, int y, int xSpeed, int ySpeed, int radius) {
 		this.center = new MovablePoint(x, y, xSpeed, ySpeed);

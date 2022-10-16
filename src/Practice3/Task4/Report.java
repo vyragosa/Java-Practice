@@ -3,7 +3,7 @@ package Practice3.Task4;
 import java.util.Scanner;
 
 class Report {
-	private Employee[] employees;
+	private final Employee[] employees;
 
 	public Report() {
 		System.out.println("Enter amount of employees:");

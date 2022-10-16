@@ -1,7 +1,7 @@
 package Practice2.Task3;
 
 class Circle {
-	private Point point;
+	private final Point point;
 
 	public Circle(double x, double y) {
 		point = new Point(x, y);

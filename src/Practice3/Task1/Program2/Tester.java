@@ -5,8 +5,8 @@ import java.util.Comparator;
 import java.util.Scanner;
 
 class Tester {
-	private Circle[] arr;
-	private int size;
+	private final Circle[] arr;
+	private final int size;
 
 	public Tester() {
 		System.out.println("Enter size of array");
