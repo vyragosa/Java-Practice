@@ -5,8 +5,8 @@ import java.util.Comparator;
 import java.util.Scanner;
 
 class Tester {
-	private Circle[] arr;
-	private int size;
+	private final Circle[] arr;
+	private final int size;
 
 	public Tester() {
 		System.out.println("Enter size of array");
@@ -30,6 +30,6 @@ class Tester {
 
 	@Override
 	public String toString() {
-		return Arrays.toString(arr).toString();
+		return Arrays.toString(arr);
 	}
 }

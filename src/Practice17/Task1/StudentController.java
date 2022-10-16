@@ -1,8 +1,8 @@
 package Practice17.Task1;
 
 class StudentController {
-	private Student model;
-	private StudentView view;
+	private final Student model;
+	private final StudentView view;
 
 	StudentController(Student student) {
 		model = student;
