@@ -7,7 +7,7 @@ import java.util.regex.Pattern;
 public class Dictionary {
 	public static void MakeDictionary(String str) {
 		Map<Character, Long> dictionary = new HashMap<>();
-		for (char i = 'A'; i <= 'Z'; i++)
+		for (Character i = 'A'; i <= 'Z'; i++)
 			dictionary.put(i, Pattern.compile(String.valueOf(i)).matcher(str.toUpperCase()).results().count());
 		System.out.println(dictionary);
 	}
