@@ -1,8 +1,8 @@
 package Practice4_1.Task5;
 
 public class Library {
-	private Reader[] reader;
-	private Book[] book;
+	private final Reader[] reader;
+	private final Book[] book;
 
 	public Library() {
 		this.reader = new Reader[]{

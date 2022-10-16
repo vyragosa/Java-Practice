@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 
 class Shop {
-	private ArrayList<Computer> listComputer = new ArrayList<>();
+	private final ArrayList<Computer> listComputer = new ArrayList<>();
 
 	public void build() {
 		int menu = 1;
