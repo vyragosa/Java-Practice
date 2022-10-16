@@ -4,8 +4,8 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 
 class Controller {
-	private View view;
-	private Model model;
+	private final View view;
+	private final Model model;
 
 	public Controller() {
 		this.model = new Model();

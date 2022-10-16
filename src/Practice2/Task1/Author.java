@@ -1,9 +1,9 @@
 package Practice2.Task1;
 
 class Author {
-	private String name;
+	private final String name;
+	private final char gender;
 	private String email;
-	private char gender;
 
 	public Author(String name, String email, char gender) {
 		this.name = name;

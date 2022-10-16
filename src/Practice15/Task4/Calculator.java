@@ -4,25 +4,25 @@ import javax.swing.*;
 
 class Calculator extends JFrame {
 
-	private JButton buttonZero;
-	private JButton buttonOne;
-	private JButton buttonTwo;
-	private JButton buttonThree;
-	private JButton buttonFour;
-	private JButton buttonFive;
-	private JButton buttonSix;
-	private JButton buttonSeven;
-	private JButton buttonEight;
-	private JButton buttonNine;
-	private JButton buttonAdd;
-	private JButton buttonSub;
-	private JButton buttonDiv;
-	private JButton buttonMul;
+	private final JButton buttonZero;
+	private final JButton buttonOne;
+	private final JButton buttonTwo;
+	private final JButton buttonThree;
+	private final JButton buttonFour;
+	private final JButton buttonFive;
+	private final JButton buttonSix;
+	private final JButton buttonSeven;
+	private final JButton buttonEight;
+	private final JButton buttonNine;
+	private final JButton buttonAdd;
+	private final JButton buttonSub;
+	private final JButton buttonDiv;
+	private final JButton buttonMul;
 
-	private JButton buttonClear;
-	private JButton buttonResult;
-	private JPanel panelMain;
-	private JTextField textField;
+	private final JButton buttonClear;
+	private final JButton buttonResult;
+	private final JPanel panelMain;
+	private final JTextField textField;
 
 	Calculator() {
 		super("Калькулятор");

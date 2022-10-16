@@ -29,6 +29,6 @@ class TestAuthor {
 
 		Author author = new Author(name, email, gender);
 
-		System.out.println("Your newly created author: " + author.toString());
+		System.out.println("Your newly created author: " + author);
 	}
 }

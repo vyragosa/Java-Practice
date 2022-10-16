@@ -2,7 +2,7 @@ package Practice3.Task1.Program2;
 
 
 class Circle {
-	private Point point;
+	private final Point point;
 	private double l;
 	private double r;
 

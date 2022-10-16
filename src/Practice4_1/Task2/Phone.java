@@ -1,8 +1,8 @@
 package Practice4_1.Task2;
 
 public class Phone {
-	private int number;
-	private String model;
+	private final int number;
+	private final String model;
 	private double weight;
 
 	Phone(int number, String model, double weight) {

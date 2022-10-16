@@ -33,6 +33,6 @@ class Bookshelf {
 
 	@Override
 	public String toString() {
-		return Arrays.toString(arr).toString();
+		return Arrays.toString(arr);
 	}
 }

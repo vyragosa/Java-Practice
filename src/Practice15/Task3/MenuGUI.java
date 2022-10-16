@@ -4,22 +4,22 @@ import javax.swing.*;
 import java.awt.*;
 
 class MenuGUI extends JFrame {
-	private JPanel panelButton1;
-	private JPanel panelButton2;
-	private JPanel panelTextArea;
-	private JButton button1;
-	private JButton button2;
-	private JTextArea textArea;
+	private final JPanel panelButton1;
+	private final JPanel panelButton2;
+	private final JPanel panelTextArea;
+	private final JButton button1;
+	private final JButton button2;
+	private final JTextArea textArea;
 
-	private JMenuBar menuBar;
-	private JMenu menuFile;
-	private JMenuItem itemSave;
-	private JMenuItem itemExit;
-	private JMenu menuEdit;
-	private JMenuItem itemCopy;
-	private JMenuItem itemCut;
-	private JMenuItem itemPaste;
-	private JMenu menuHelp;
+	private final JMenuBar menuBar;
+	private final JMenu menuFile;
+	private final JMenuItem itemSave;
+	private final JMenuItem itemExit;
+	private final JMenu menuEdit;
+	private final JMenuItem itemCopy;
+	private final JMenuItem itemCut;
+	private final JMenuItem itemPaste;
+	private final JMenu menuHelp;
 
 	public MenuGUI() {
 		super("Меню");

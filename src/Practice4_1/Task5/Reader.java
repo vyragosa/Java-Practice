@@ -1,7 +1,7 @@
 package Practice4_1.Task5;
 
 class Reader {
-	private String name;
+	private final String name;
 	private int readerID;
 	private String faculty;
 	private String dateOfBirth;

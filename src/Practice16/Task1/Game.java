@@ -9,11 +9,11 @@ import java.util.Random;
 class Game extends JFrame {
 
 	private final int number;
-	private JPanel[] panel;
-	private JButton answerButton;
-	private JTextField textField;
-	private JLabel labelAsk;
-	private JLabel labelCounterAttemps;
+	private final JPanel[] panel;
+	private final JButton answerButton;
+	private final JTextField textField;
+	private final JLabel labelAsk;
+	private final JLabel labelCounterAttemps;
 	private int counter = 3;
 
 
