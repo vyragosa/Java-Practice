@@ -5,20 +5,24 @@ import java.awt.*;
 
 
 class View extends JFrame {
-
-
+	JPanel[] panel;
 	private final JLabel label;
 	private final JTextField text;
 	private final JButton button;
 
 	public View() {
 		super("Draw GUI");
-		setSize(200, 300);
+		setSize(300, 300);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setLayout(new GridLayout(3, 1));
-		add(button = new JButton("CLICK ME"), JLabel.CENTER);
-		add(text = new JTextField("Example"), JLabel.CENTER);
-		add(label = new JLabel("Enter text"), JLabel.CENTER);
+
+		panel = new JPanel[3];
+		for (int i = 0; i < panel.length; i++) {
+			add(panel[i] = new JPanel());
+		}
+		panel[0].add(label = new JLabel("Enter text"), JLabel.CENTER);
+		panel[1].add(text = new JTextField("Example", 16), JLabel.CENTER);
+		panel[2].add(button = new JButton("CLICK ME"), JLabel.CENTER);
 		setVisible(true);
 	}
 
