@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 
 
-public class View extends JFrame {
+class View extends JFrame {
 
 
 	private final JLabel label;

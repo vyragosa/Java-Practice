@@ -3,7 +3,7 @@ package Practice17.Task3;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 
-public class Controller {
+class Controller {
 	private View view;
 	private Model model;
 

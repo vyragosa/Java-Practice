@@ -1,6 +1,6 @@
 package Practice17.Task1;
 
-public class Student {
+class Student {
 	private String name;
 	private String rollNo;
 

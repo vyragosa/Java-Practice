@@ -1,6 +1,6 @@
 package Practice17.Task2;
 
-public class Employee {
+class Employee {
 	private String name;
 	private int workHours;
 	private double coefficient;

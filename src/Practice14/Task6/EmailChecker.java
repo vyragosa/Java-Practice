@@ -2,7 +2,7 @@ package Practice14.Task6;
 
 import java.util.regex.Pattern;
 
-public class EmailChecker {
+class EmailChecker {
 	public static void main(String[] args) {
 		Pattern pattern = Pattern.compile("^\\w+@\\w+(\\.\\w+)?$");
 		System.out.println(pattern.matcher("root@localhost").matches());

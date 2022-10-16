@@ -2,7 +2,7 @@ package Practice14.Task7;
 
 import java.util.regex.Pattern;
 
-public class PasswordChecker {
+class PasswordChecker {
 	public static void main(String[] args) {
 		Pattern pattern = Pattern.compile("^(?=.*[A-Z])(?=.*[a-z])(?=.*\\d)\\w{8,}$");
 		System.out.println(pattern.matcher("F032_assword").matches());

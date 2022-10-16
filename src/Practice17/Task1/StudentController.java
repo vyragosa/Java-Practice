@@ -1,6 +1,6 @@
 package Practice17.Task1;
 
-public class StudentController {
+class StudentController {
 	private Student model;
 	private StudentView view;
 

@@ -2,7 +2,7 @@ package Practice13.Task3;
 
 import java.util.Scanner;
 
-public class Main {
+class Main {
 	public static void main(String[] args) {
 		String address = new Scanner(System.in).nextLine();
 		Address addressClass = new Address();

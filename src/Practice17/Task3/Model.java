@@ -1,6 +1,6 @@
 package Practice17.Task3;
 
-public class Model {
+class Model {
 	private String txt;
 
 	public String getTxt() {

@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.regex.Pattern;
 
-public class Dictionary {
+class Dictionary {
 	public static void MakeDictionary(String str) {
 		Map<Character, Long> dictionary = new HashMap<>();
 		for (Character i = 'A'; i <= 'Z'; i++)

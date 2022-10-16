@@ -2,7 +2,7 @@ package Practice13.Task3;
 
 import java.util.StringTokenizer;
 
-public class Address {
+class Address {
 	private String country;
 	private String region;
 	private String city;

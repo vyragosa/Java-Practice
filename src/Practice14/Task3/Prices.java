@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class Prices {
+class Prices {
 	public static void main(String[] args) {
 		Pattern pattern = Pattern.compile("\\d+(.\\d+)*\\s(USD|RUB|EU)");
 		Matcher matcher = pattern.matcher(new Scanner(System.in).nextLine());

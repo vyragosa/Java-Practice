@@ -1,8 +1,8 @@
 package Practice17.Task2;
 
-public class EmployeeController {
-	Employee model;
-	EmployeeView view;
+class EmployeeController {
+	private Employee model;
+	private EmployeeView view;
 
 	public EmployeeController() {
 		this.model = new Employee();
