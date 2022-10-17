@@ -11,12 +11,12 @@ class MovableRectangle implements Movable {
 	}
 
 	private boolean isMovable() {
-		return topLeft.getxSpeed() == topRight.getxSpeed() && topLeft.getySpeed() == topRight.getySpeed();
+		return topLeft.getxSpeed() != topRight.getxSpeed() || topLeft.getySpeed() != topRight.getySpeed();
 	}
 
 	@Override
 	public void moveUp() {
-		if (!isMovable())
+		if (isMovable())
 			return;
 		this.topLeft.moveUp();
 		this.topRight.moveUp();
@@ -24,7 +24,7 @@ class MovableRectangle implements Movable {
 
 	@Override
 	public void moveDown() {
-		if (!isMovable())
+		if (isMovable())
 			return;
 		this.topLeft.moveDown();
 		this.topRight.moveDown();
@@ -32,7 +32,7 @@ class MovableRectangle implements Movable {
 
 	@Override
 	public void moveLeft() {
-		if (!isMovable())
+		if (isMovable())
 			return;
 		this.topLeft.moveLeft();
 		this.topRight.moveLeft();
@@ -40,7 +40,7 @@ class MovableRectangle implements Movable {
 
 	@Override
 	public void moveRight() {
-		if (!isMovable())
+		if (isMovable())
 			return;
 		this.topLeft.moveRight();
 		this.topRight.moveRight();

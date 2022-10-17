@@ -6,9 +6,6 @@ import java.util.LinkedList;
 import java.util.Random;
 
 class Compare {
-	public static void add() {
-
-	}
 
 	public static void main(String[] args) {
 		LinkedList<Integer> linkedList = new LinkedList<Integer>();
