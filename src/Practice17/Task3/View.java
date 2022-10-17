@@ -5,10 +5,10 @@ import java.awt.*;
 
 
 class View extends JFrame {
-	JPanel[] panel;
 	private final JLabel label;
 	private final JTextField text;
 	private final JButton button;
+	JPanel[] panel;
 
 	public View() {
 		super("Draw GUI");
