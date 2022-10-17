@@ -7,7 +7,7 @@ class PhoneParser {
 		this.formatNumber = "%s-%s-%s".formatted(number.substring(0, number.length() - 7),
 				number.substring(number.length() - 7, number.length() - 4),
 				number.substring(number.length() - 4));
-		if (number.charAt(0) != '+') this.formatNumber = "" + formatNumber;
+		if (number.charAt(0) != '+') this.formatNumber = "+" + formatNumber;
 
 	}
 
