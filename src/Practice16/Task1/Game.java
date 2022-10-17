@@ -52,7 +52,7 @@ class Game extends JFrame {
 					else labelAsk.setText("Искомое число меньше ");
 				} else {
 					labelCounterAttemps.setText("У вас не осталось попыток. Игра окончена ");
-					JOptionPane.showMessageDialog(null, "У вас не осталось попыток. Игра окончена.");
+					JOptionPane.showMessageDialog(null, "У вас не осталось попыток. Игра окончена. Искомое число: " + number);
 
 				}
 			}
