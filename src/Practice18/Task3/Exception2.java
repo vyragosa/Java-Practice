@@ -2,7 +2,7 @@ package Practice18.Task3;
 
 import java.util.Scanner;
 
-public class Exception2 {
+class Exception2 {
 	public void exceptionDemo() {
 		Scanner myScanner = new Scanner(System.in);
 		System.out.print("Enter an integer ");

@@ -1,6 +1,6 @@
 package Practice18.Task5;
 
-public class ThrowsDemo {
+class ThrowsDemo {
 	public void getDetails(String key) {
 		//if(key == null) {
 		//	throw new NullPointerException("null key in getDetails" );

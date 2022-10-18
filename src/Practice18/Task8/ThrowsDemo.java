@@ -2,7 +2,7 @@ package Practice18.Task8;
 
 import java.util.Scanner;
 
-public class ThrowsDemo {
+class ThrowsDemo {
 	public void getKey() {
 		Scanner myScanner = new Scanner(System.in);
 		try {
