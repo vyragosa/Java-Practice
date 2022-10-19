@@ -1,6 +1,6 @@
 package Practice23.Task3;
 
-public class Const implements Expression {
+class Const implements Expression {
 	private final int iVal;
 	private final double dVal;
 

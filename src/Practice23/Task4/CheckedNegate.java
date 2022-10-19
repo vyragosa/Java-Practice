@@ -1,6 +1,6 @@
 package Practice23.Task4;
 
-public class CheckedNegate extends UnaryOperation {
+class CheckedNegate extends UnaryOperation {
 	public CheckedNegate(TripleExpression object) {
 		super(object);
 	}

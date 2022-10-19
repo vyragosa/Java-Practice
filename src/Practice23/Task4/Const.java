@@ -1,6 +1,6 @@
 package Practice23.Task4;
 
-public class Const implements TripleExpression {
+class Const implements TripleExpression {
     private final int iVal;
     private final double dVal;
 

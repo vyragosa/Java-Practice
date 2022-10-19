@@ -1,6 +1,6 @@
 package Practice23.Task1;
 
-public class ArrayQueueADT {
+class ArrayQueueADT {
     private static final int START_CAPACITY = 10;
     private Object array[];
     private int size;

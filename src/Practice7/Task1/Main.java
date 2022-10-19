@@ -1,6 +1,6 @@
 package Practice7.Task1;
 
-public class Main {
+class Main {
 	public static void main(String[] args) {
 		Movable movable = new MovableRectangle();
 		movable.moveUp();

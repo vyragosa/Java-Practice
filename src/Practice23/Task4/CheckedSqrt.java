@@ -1,6 +1,6 @@
 package Practice23.Task4;
 
-public class CheckedSqrt extends UnaryOperation {
+class CheckedSqrt extends UnaryOperation {
     public CheckedSqrt(TripleExpression object) {
         super(object);
     }

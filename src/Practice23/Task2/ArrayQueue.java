@@ -1,6 +1,6 @@
 package Practice23.Task2;
 
-public class ArrayQueue extends AbstractQueue {
+class ArrayQueue extends AbstractQueue {
     private final int START_CAPACITY = 100;
     private Object array[];
     private int head;

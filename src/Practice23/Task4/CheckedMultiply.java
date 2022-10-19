@@ -1,6 +1,6 @@
 package Practice23.Task4;
 
-public class CheckedMultiply extends BinaryOperation {
+class CheckedMultiply extends BinaryOperation {
 	public CheckedMultiply(TripleExpression left, TripleExpression right) {
 		super(left, right);
 	}

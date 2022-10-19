@@ -1,6 +1,6 @@
 package Practice4_1.Task5;
 
-public class Library {
+class Library {
 	private final Reader[] reader;
 	private final Book[] book;
 

@@ -2,7 +2,7 @@ package Practice4_1.Task4;
 
 import java.util.Random;
 
-public class Matrix {
+class Matrix {
 	private final int row;
 	private final int col;
 	private int[][] matrix;

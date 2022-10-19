@@ -2,7 +2,7 @@ package Practice24.Task3;
 
 import javax.swing.*;
 
-public class Frame extends JFrame {
+class Frame extends JFrame {
 	private JMenu file;
 	private JMenuItem fileNew;
 	private JMenuItem fileOpen;

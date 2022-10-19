@@ -1,6 +1,6 @@
 package Practice23.Task4;
 
-public class Add extends Operation {
+class Add extends Operation {
     public Add(TripleExpression left, TripleExpression right) {
         super(left, right);
     }

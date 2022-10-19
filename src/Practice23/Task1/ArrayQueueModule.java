@@ -1,6 +1,6 @@
 package Practice23.Task1;
 
-public class ArrayQueueModule {
+class ArrayQueueModule {
     private static final int START_CAPACITY = 100;
     private static Object array[];
     private static int size;

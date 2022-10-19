@@ -2,7 +2,7 @@ package Practice6.Task11;
 
 import java.util.Scanner;
 
-public class Main {
+class Main {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Введите значение в Градусах по цельсию (℃)");

@@ -1,6 +1,6 @@
 package Practice23.Task2;
 
-public class LinkedQueue extends AbstractQueue {
+class LinkedQueue extends AbstractQueue {
     private Node tail;
     private Node head;
 

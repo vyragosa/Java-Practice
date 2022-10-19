@@ -1,6 +1,6 @@
 package Practice23.Task4;
 
-public class ExpressionParser implements Parser {
+class ExpressionParser implements Parser {
 	private String rest;
 	private int firstIndex;
 	private boolean intMin = false;

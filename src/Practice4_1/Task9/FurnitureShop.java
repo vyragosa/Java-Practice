@@ -1,6 +1,6 @@
 package Practice4_1.Task9;
 
-public class FurnitureShop {
+class FurnitureShop {
 	private final Furniture[] furniture;
 
 	public FurnitureShop() {

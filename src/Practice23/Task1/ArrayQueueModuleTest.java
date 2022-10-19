@@ -1,6 +1,6 @@
 package Practice23.Task1;
 
-public class ArrayQueueModuleTest {
+class ArrayQueueModuleTest {
     public static void main(String[] args) {
         fill();
         dump();

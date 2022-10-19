@@ -1,6 +1,6 @@
 package Practice4_1.Task2;
 
-public class Phone {
+class Phone {
 	private final int number;
 	private final String model;
 	private double weight;

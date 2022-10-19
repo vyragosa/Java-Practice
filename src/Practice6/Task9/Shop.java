@@ -1,6 +1,6 @@
 package Practice6.Task9;
 
-public class Shop {
+class Shop {
 	private static final Printable[] shopList = new Printable[]{
 			new Book("Книга 1"),
 			new Magazine("Журнал 1"),

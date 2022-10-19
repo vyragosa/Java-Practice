@@ -1,6 +1,6 @@
 package Practice4_1.Task6;
 
-public class Main {
+class Main {
 	public static void main(String[] args) {
 		Employer[] worker = new Employer[]{
 				new Manager("Андрей", "Петрович", 123.1, 13),

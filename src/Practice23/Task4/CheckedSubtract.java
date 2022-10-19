@@ -1,6 +1,6 @@
 package Practice23.Task4;
 
-public class CheckedSubtract extends BinaryOperation {
+class CheckedSubtract extends BinaryOperation {
     public CheckedSubtract(TripleExpression left, TripleExpression right) {
         super(left, right);
     }

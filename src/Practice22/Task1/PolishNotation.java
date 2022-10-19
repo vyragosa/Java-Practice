@@ -3,7 +3,7 @@ package Practice22.Task1;
 import java.util.EmptyStackException;
 import java.util.Stack;
 
-public class PolishNotation {
+class PolishNotation {
 	public static double calculate(String str) throws ArithmeticException, EmptyStackException {
 		Stack<Double> stack = new Stack<>();
 		for (String element : str.split("\\s+")) {

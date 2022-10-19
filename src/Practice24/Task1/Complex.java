@@ -1,6 +1,6 @@
 package Practice24.Task1;
 
-public class Complex {
+class Complex {
 	int real;
 	int image;
 

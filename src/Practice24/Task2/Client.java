@@ -1,6 +1,6 @@
 package Practice24.Task2;
 
-public class Client {
+class Client {
 	private Chair chair;
 
 	public void setChair(Chair chair) {

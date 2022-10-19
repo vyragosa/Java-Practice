@@ -1,6 +1,6 @@
 package Practice23.Task4;
 
-public class Variable implements TripleExpression {
+class Variable implements TripleExpression {
     private final String name;
 
     public Variable(String name) {

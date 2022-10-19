@@ -1,6 +1,6 @@
 package Practice23.Task3;
 
-public class Variable implements Expression {
+class Variable implements Expression {
     private final String name;
 
     public Variable(String name) {

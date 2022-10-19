@@ -1,6 +1,6 @@
 package Practice22.Task1;
 
-public class Main {
+class Main {
 	public static void main(String[] args) {
 		try {
 			System.out.println(PolishNotation.calculate("1 3 +"));

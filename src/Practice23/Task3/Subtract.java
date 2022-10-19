@@ -1,6 +1,6 @@
 package Practice23.Task3;
 
-public class Subtract extends Operation {
+class Subtract extends Operation {
 	public Subtract(TripleExpression left, TripleExpression right) {
 		super(left, right);
 	}

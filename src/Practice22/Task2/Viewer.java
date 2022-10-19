@@ -3,7 +3,7 @@ package Practice22.Task2;
 import javax.swing.*;
 
 
-public class Viewer extends JFrame {
+class Viewer extends JFrame {
 	private final JTextField textField;
 	private final JButton buttonDeleteAll;
 	private final JButton buttonDegree;

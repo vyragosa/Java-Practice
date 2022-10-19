@@ -1,6 +1,6 @@
 package Practice23.Task3;
 
-public class Multiply extends Operation {
+class Multiply extends Operation {
 
 	public Multiply(TripleExpression left, TripleExpression right) {
 		super(left, right);

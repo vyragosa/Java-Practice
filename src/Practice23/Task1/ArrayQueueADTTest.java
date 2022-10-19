@@ -1,6 +1,6 @@
 package Practice23.Task1;
 
-public class ArrayQueueADTTest {
+class ArrayQueueADTTest {
     public static void main(String[] args) {
         ArrayQueueADT queue = new ArrayQueueADT();
         fill(queue);

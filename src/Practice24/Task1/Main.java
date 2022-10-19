@@ -1,6 +1,6 @@
 package Practice24.Task1;
 
-public class Main {
+class Main {
 	public static void main(String[] args) {
 		Complex complex1 = new Complex(42, 10);
 		System.out.println(complex1);

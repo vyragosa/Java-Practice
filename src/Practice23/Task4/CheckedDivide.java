@@ -1,6 +1,6 @@
 package Practice23.Task4;
 
-public class CheckedDivide extends BinaryOperation {
+class CheckedDivide extends BinaryOperation {
 	public CheckedDivide(TripleExpression left, TripleExpression right) {
 		super(left, right);
 	}

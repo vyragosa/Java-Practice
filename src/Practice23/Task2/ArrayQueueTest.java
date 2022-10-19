@@ -1,15 +1,10 @@
 package Practice23.Task2;
 
 
-public class Main {
+class ArrayQueueTest {
 
 	public static void main(String[] args) {
-		Queue queue = new LinkedQueue();
-		fill(queue);
-		getArray(queue);
-		dump(queue);
-		clear(queue);
-		queue = new ArrayQueue();
+		Queue queue = new ArrayQueue();
 		fill(queue);
 		getArray(queue);
 		dump(queue);

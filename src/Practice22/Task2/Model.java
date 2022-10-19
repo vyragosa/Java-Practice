@@ -3,7 +3,7 @@ package Practice22.Task2;
 import java.util.EmptyStackException;
 import java.util.Stack;
 
-public class Model {
+class Model {
 
     private String temp;
 
