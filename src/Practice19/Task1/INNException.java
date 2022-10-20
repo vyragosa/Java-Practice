@@ -2,7 +2,7 @@ package Practice19.Task1;
 
 class INNException extends Exception {
 	public INNException() {
-		super("ИНН правильный");
+		super("ИНН введен неверно!");
 	}
 
 	public INNException(String message) {

@@ -12,7 +12,7 @@ class Frame extends JFrame {
 
 	public Frame(ICreateDocument createDocument) {
 		super("Редактор");
-		setSize(200, 300);
+		setSize(300, 200);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
 		setJMenuBar(menuBar = new JMenuBar());

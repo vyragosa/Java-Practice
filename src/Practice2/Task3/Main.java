@@ -7,5 +7,6 @@ class Main {
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Enter size of array");
 		Tester tester = new Tester(scanner.nextInt());
+		System.out.println(tester);
 	}
 }

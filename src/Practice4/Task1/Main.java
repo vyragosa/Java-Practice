@@ -13,6 +13,4 @@ class Main {
 			System.out.println(season.toString());
 		}
 	}
-
-
 }
