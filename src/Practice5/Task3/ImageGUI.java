@@ -9,7 +9,6 @@ class ImageGUI extends JFrame {
 		JLabel jLabel = new JLabel();
 		ImageIcon imageIcon = new ImageIcon(args);
 		setSize(imageIcon.getIconWidth(), imageIcon.getIconHeight());
-
 		jLabel.setIcon(imageIcon);
 		add(jLabel);
 		setVisible(true);
