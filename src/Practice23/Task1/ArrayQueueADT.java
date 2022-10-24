@@ -2,7 +2,7 @@ package Practice23.Task1;
 
 class ArrayQueueADT {
     private static final int START_CAPACITY = 10;
-    private Object array[];
+    private Object[] array;
     private int size;
     private int head;
     private int tail;

@@ -2,7 +2,7 @@ package Practice23.Task1;
 
 class ArrayQueueModule {
     private static final int START_CAPACITY = 100;
-    private static Object array[];
+    private static Object[] array;
     private static int size;
     private static int head;
     private static int tail;
