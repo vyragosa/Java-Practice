@@ -9,7 +9,7 @@ class Test {
 		}
 		System.out.println(hashTable);
 		System.out.println(hashTable.get("5"));
-		hashTable.erase("5");
+		hashTable.remove("5");
 		System.out.println(hashTable);
 	}
 }

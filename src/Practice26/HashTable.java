@@ -8,27 +8,16 @@ class HashTable<K, V> {
 	private Queue<Node>[] table;
 	private int capacity;
 
-	private static class Node<K, V> {
-		private K key;
-		private V data;
-
-		public Node(K key, V data) {
-			this.key = key;
-			this.data = data;
-		}
-
-		@Override
-		public String toString() {
-			return "[" +
-					key + ',' +
-					data +
-					']';
-		}
-
-	}
-
 	public void init(int size) {
 		table = new Queue[size];
+	}
+
+	public int size() {
+		return capacity;
+	}
+
+	public boolean isEmpty() {
+		return capacity == 0;
 	}
 
 	private int hash(K key) {
@@ -66,7 +55,7 @@ class HashTable<K, V> {
 				.orElse(null);
 	}
 
-	public void erase(K key) {
+	public void remove(K key) {
 		table[hash(key)].stream()
 				.filter(node -> Objects.equals(node.key, key))
 				.findFirst()
@@ -81,5 +70,24 @@ class HashTable<K, V> {
 				stringBuilder.append(i).append(" : ").append(table[i]).append('\n');
 		}
 		return stringBuilder.toString();
+	}
+
+	private static class Node<K, V> {
+		private K key;
+		private V data;
+
+		public Node(K key, V data) {
+			this.key = key;
+			this.data = data;
+		}
+
+		@Override
+		public String toString() {
+			return "[" +
+					key + ',' +
+					data +
+					']';
+		}
+
 	}
 }
