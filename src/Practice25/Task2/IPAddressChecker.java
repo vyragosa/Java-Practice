@@ -2,7 +2,7 @@ package Practice25.Task2;
 
 import java.util.regex.Pattern;
 
-public class IPAdressChecker {
+public class IPAddressChecker {
 	public static void main(String[] args) {
 		Pattern pattern = Pattern.compile("(((\\d{1,2})|([01]\\d{2})|(2[0-4]\\d)|25[0-5])(\\.|$)){4}");
 		System.out.println(pattern.matcher("192.0.2.135").matches());
