@@ -6,18 +6,18 @@ import java.util.Queue;
 
 class HashTable<K, V> {
 	private Queue<Node>[] table;
-	private int capacity;
+	private int loadFactor;
 
 	public void init(int size) {
 		table = new Queue[size];
 	}
 
 	public int size() {
-		return capacity;
+		return loadFactor;
 	}
 
 	public boolean isEmpty() {
-		return capacity == 0;
+		return loadFactor == 0;
 	}
 
 	private int hash(K key) {
@@ -25,7 +25,7 @@ class HashTable<K, V> {
 	}
 
 	public void add(K key, V value) {
-		if (++capacity / (double) table.length > 0.75)
+		if (++loadFactor / (double) table.length > 0.75)
 			rehash();
 		int index = hash(key);
 		if (table[index] == null) {
@@ -37,7 +37,7 @@ class HashTable<K, V> {
 	private void rehash() {
 		Queue<Node>[] oldTable = table;
 		table = new Queue[table.length * 2];
-		capacity = 0;
+		loadFactor = 0;
 		for (Queue<Node> nodes : oldTable) {
 			if (nodes != null) {
 				for (Node node : nodes) {
