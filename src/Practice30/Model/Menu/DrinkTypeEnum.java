@@ -1,4 +1,4 @@
-package Practice30.Menu;
+package Practice30.Model.Menu;
 
 public enum DrinkTypeEnum {
 	BEER(.05, "Пиво", "0.5 литра"),

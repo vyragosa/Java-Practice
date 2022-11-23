@@ -1,4 +1,4 @@
-package Practice30.Menu;
+package Practice30.Model.Menu;
 
 public interface Alcoholable {
 	boolean isAlcoholicDrink();

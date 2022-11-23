@@ -1,4 +1,4 @@
-package Practice30.CustomerInfo;
+package Practice30.Model.CustomerInfo;
 
 public final class Address {
 	private final String cityName;
@@ -43,5 +43,17 @@ public final class Address {
 
 	public static Address getEmptyAddress() {
 		return EMPTY_ADDRESS;
+	}
+
+	@Override
+	public String toString() {
+		return "Адрес=[" +
+				"Город='" + cityName + '\'' +
+				", Индекс=" + zipCode +
+				", Улица='" + streetName + '\'' +
+				", Дом=" + buildingNumber +
+				", Корпус=" + buildingLetter +
+				", Квартира=" + apartmentNumber +
+				']';
 	}
 }

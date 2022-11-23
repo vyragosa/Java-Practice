@@ -1,8 +1,8 @@
-package Practice30.OrderManager;
+package Practice30.Model.OrderManager;
 
-import Practice30.Expressions.IllegalTableNumber;
-import Practice30.Menu.Item;
-import Practice30.Order.Order;
+import Practice30.Model.Expressions.IllegalTableNumber;
+import Practice30.Model.Menu.Item;
+import Practice30.Model.Order.Order;
 
 import java.util.Arrays;
 
@@ -15,21 +15,21 @@ public class TableOrdersManager implements OrdersManager {
 		this.size = size;
 	}
 
-	void add(Order order, int tableNumber) throws IllegalTableNumber {
+	public void add(Order order, int tableNumber) throws IllegalTableNumber {
 		if (tableNumber > size) {
 			throw new IllegalTableNumber();
 		}
 		orders[tableNumber] = order;
 	}
 
-	void addItem(Item item, int tableNumber) throws IllegalTableNumber {
+	public void addItem(Item item, int tableNumber) throws IllegalTableNumber {
 		if (tableNumber > size) {
 			throw new IllegalTableNumber();
 		}
 		orders[tableNumber].add(item);
 	}
 
-	int freeTableNumber() {
+	public int freeTableNumber() {
 		for (int i = 0; i < size; i++) {
 			if (orders[i] == null) {
 				return i;
@@ -38,7 +38,7 @@ public class TableOrdersManager implements OrdersManager {
 		return -1;
 	}
 
-	int[] freeTableNumbers() {
+	public int[] freeTableNumbers() {
 		int[] freeTables = new int[size];
 		int freeTablesSize = 0;
 		for (int i = 0; i < size; i++) {
@@ -49,21 +49,21 @@ public class TableOrdersManager implements OrdersManager {
 		return Arrays.copyOf(freeTables, freeTablesSize);
 	}
 
-	Order getOrder(int tableNumber) throws IllegalTableNumber {
+	public Order getOrder(int tableNumber) throws IllegalTableNumber {
 		if (tableNumber > size) {
 			throw new IllegalTableNumber();
 		}
 		return orders[tableNumber];
 	}
 
-	void remove(int tableNumber) throws IllegalTableNumber {
+	public void remove(int tableNumber) throws IllegalTableNumber {
 		if (tableNumber > size) {
 			throw new IllegalTableNumber();
 		}
 		orders[tableNumber] = null;
 	}
 
-	int remove(Order order) {
+	public int remove(Order order) {
 		for (int i = 0; i < size; i++) {
 			if (orders[i] == order) {
 				orders[i] = null;
@@ -73,7 +73,7 @@ public class TableOrdersManager implements OrdersManager {
 		return -1;
 	}
 
-	int removeAll(Order order) {
+	public int removeAll(Order order) {
 		int count = 0;
 		for (int i = 0; i < size; i++) {
 			if (orders[i] == order) {
@@ -119,5 +119,13 @@ public class TableOrdersManager implements OrdersManager {
 	@Override
 	public int ordersQuantity() {
 		return size;
+	}
+
+	@Override
+	public String toString() {
+		return "TableOrdersManager{" +
+				"orders=" + Arrays.toString(orders) +
+				", size=" + size +
+				'}';
 	}
 }

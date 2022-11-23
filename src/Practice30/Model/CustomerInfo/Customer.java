@@ -1,4 +1,4 @@
-package Practice30.CustomerInfo;
+package Practice30.Model.CustomerInfo;
 
 public final class Customer {
 	private final String firstName;
@@ -42,4 +42,8 @@ public final class Customer {
 		return NOT_MATURE_UNKNOWN_CUSTOMER;
 	}
 
+	@Override
+	public String toString() {
+		return String.join(" ", firstName, lastName,String.valueOf(age), address.toString());
+	}
 }

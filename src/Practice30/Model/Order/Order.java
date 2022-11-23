@@ -1,8 +1,8 @@
-package Practice30.Order;
+package Practice30.Model.Order;
 
-import Practice30.CustomerInfo.Customer;
-import Practice30.Expressions.IllegalTableNumber;
-import Practice30.Menu.Item;
+import Practice30.Model.CustomerInfo.Customer;
+import Practice30.Model.Expressions.IllegalTableNumber;
+import Practice30.Model.Menu.Item;
 
 public interface Order {
 	boolean add(Item item) throws IllegalTableNumber;
@@ -30,4 +30,6 @@ public interface Order {
 	Customer getCustomer();
 
 	void setCustomer(Customer customer);
+
+	void clear();
 }

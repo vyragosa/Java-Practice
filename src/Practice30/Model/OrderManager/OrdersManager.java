@@ -1,7 +1,7 @@
-package Practice30.OrderManager;
+package Practice30.Model.OrderManager;
 
-import Practice30.Menu.Item;
-import Practice30.Order.Order;
+import Practice30.Model.Menu.Item;
+import Practice30.Model.Order.Order;
 
 public interface OrdersManager {
 	int itemsQuantity(String itemName);

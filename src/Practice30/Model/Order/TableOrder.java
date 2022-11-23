@@ -1,8 +1,8 @@
-package Practice30.Order;
+package Practice30.Model.Order;
 
-import Practice30.CustomerInfo.Customer;
-import Practice30.Expressions.IllegalTableNumber;
-import Practice30.Menu.Item;
+import Practice30.Model.CustomerInfo.Customer;
+import Practice30.Model.Expressions.IllegalTableNumber;
+import Practice30.Model.Menu.Item;
 
 import java.util.Arrays;
 import java.util.Comparator;
@@ -146,5 +146,19 @@ public class TableOrder implements Order {
 	@Override
 	public void setCustomer(Customer customer) {
 		this.customer = customer;
+	}
+
+	@Override
+	public void clear() {
+		size = 0;
+	}
+
+	@Override
+	public String toString() {
+		return "TableOrder{" +
+				"customer=" + customer +
+				", items=" + Arrays.toString(items) +
+				", size=" + size +
+				'}';
 	}
 }

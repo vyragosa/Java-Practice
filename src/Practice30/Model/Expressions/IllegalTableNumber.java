@@ -1,4 +1,4 @@
-package Practice30.Expressions;
+package Practice30.Model.Expressions;
 
 public class IllegalTableNumber extends Exception {
 	public IllegalTableNumber() {

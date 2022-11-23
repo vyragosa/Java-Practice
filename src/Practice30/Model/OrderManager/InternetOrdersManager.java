@@ -1,7 +1,7 @@
-package Practice30.OrderManager;
+package Practice30.Model.OrderManager;
 
-import Practice30.Menu.Item;
-import Practice30.Order.Order;
+import Practice30.Model.Menu.Item;
+import Practice30.Model.Order.Order;
 
 public class InternetOrdersManager implements OrdersManager {
 	private class QueueNode {
@@ -14,9 +14,9 @@ public class InternetOrdersManager implements OrdersManager {
 		}
 	}
 
-	QueueNode head;
-	QueueNode tail;
-	int size;
+	private QueueNode head;
+	private QueueNode tail;
+	private int size;
 
 	public InternetOrdersManager() {
 		this.head = null;
@@ -24,7 +24,7 @@ public class InternetOrdersManager implements OrdersManager {
 		this.size = 0;
 	}
 
-	boolean add(Order order) {
+	public boolean add(Order order) {
 		QueueNode node = new QueueNode(order);
 		if (head == null) {
 			head = node;
@@ -42,7 +42,7 @@ public class InternetOrdersManager implements OrdersManager {
 		return true;
 	}
 
-	Order remove() {
+	public Order remove() {
 		if (head == null) {
 			return null;
 		}
@@ -101,5 +101,14 @@ public class InternetOrdersManager implements OrdersManager {
 	@Override
 	public int ordersQuantity() {
 		return size;
+	}
+
+	@Override
+	public String toString() {
+		return "InternetOrdersManager{" +
+				"head=" + head +
+				", tail=" + tail +
+				", size=" + size +
+				'}';
 	}
 }
