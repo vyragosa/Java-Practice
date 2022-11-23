@@ -8,8 +8,6 @@ import Practice30.Viewer.CustomerFillGUI;
 
 public class Controller {
 	public Controller() {
-		TableOrdersManager tableManager = new TableOrdersManager(RestaurantInfo.tablesCount);
-		InternetOrdersManager internetManager = new InternetOrdersManager();
-		new CustomerFillGUI(tableManager, internetManager).setVisible(true);
+		new CustomerFillGUI(new TableOrdersManager(RestaurantInfo.tablesCount), new InternetOrdersManager()).setVisible(true);
 	}
 }
