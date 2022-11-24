@@ -6,20 +6,9 @@ import Practice32.Model.Order.Order;
 import java.io.Serializable;
 
 public class InternetOrdersManager implements OrdersManager, Serializable {
-	private class QueueNode implements Serializable {
-		Order order;
-		QueueNode next;
-		QueueNode prev;
-
-		public QueueNode(Order order) {
-			this.order = order;
-		}
-	}
-
 	private QueueNode head;
 	private QueueNode tail;
 	private int size;
-
 	public InternetOrdersManager() {
 		this.head = null;
 		this.tail = null;
@@ -112,5 +101,15 @@ public class InternetOrdersManager implements OrdersManager, Serializable {
 				", tail=" + tail +
 				", size=" + size +
 				'}';
+	}
+
+	private class QueueNode implements Serializable {
+		Order order;
+		QueueNode next;
+		QueueNode prev;
+
+		public QueueNode(Order order) {
+			this.order = order;
+		}
 	}
 }

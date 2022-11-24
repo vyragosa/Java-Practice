@@ -24,6 +24,7 @@ public enum DrinkTypeEnum implements Serializable {
 	private final double defaultAlcoholVol;
 	private final String name;
 	private final String description;
+
 	private DrinkTypeEnum(double defaultAlcoholVol, String name, String description) {
 		this.defaultAlcoholVol = defaultAlcoholVol;
 		this.name = name;

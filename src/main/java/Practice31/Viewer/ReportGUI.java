@@ -38,29 +38,29 @@ public class ReportGUI extends JFrame {
 
 		panel.add(tableOrders);
 		for (int i = 0; i < tm.ordersQuantity(); i++) {
-            Order order;
-            try {
-                order = tm.getOrder(i);
-            } catch (IllegalTableNumber e) {
-                JOptionPane.showMessageDialog(getContentPane(), "Неверный номер стола");
-                return;
-            }
-			if(order == null)
+			Order order;
+			try {
+				order = tm.getOrder(i);
+			} catch (IllegalTableNumber e) {
+				JOptionPane.showMessageDialog(getContentPane(), "Неверный номер стола");
+				return;
+			}
+			if (order == null)
 				continue;
-            Item[] items = order.sortedItemsByCostDesc();
-            if(items == null)
-                continue;
-            JLabel label = new JLabel("Заказ для стола: " + i + ":");
+			Item[] items = order.sortedItemsByCostDesc();
+			if (items == null)
+				continue;
+			JLabel label = new JLabel("Заказ для стола: " + i + ":");
 			label.setFont(new Font("Serif", Font.PLAIN, 16));
 			panel.add(label);
 
-            for (Item value : items) {
-                JLabel item = new JLabel(value.toString());
-                item.setFont(new Font("Serif", Font.PLAIN, 14));
-                panel.add(item);
-            }
-            double total = order.costTotal();
-            JLabel cost = new JLabel("Цена=" + total + "рублей");
+			for (Item value : items) {
+				JLabel item = new JLabel(value.toString());
+				item.setFont(new Font("Serif", Font.PLAIN, 14));
+				panel.add(item);
+			}
+			double total = order.costTotal();
+			JLabel cost = new JLabel("Цена=" + total + "рублей");
 			cost.setFont(new Font("Serif", Font.PLAIN, 14));
 			panel.add(cost);
 			JLabel cst = new JLabel("Заказчик:");
@@ -72,30 +72,30 @@ public class ReportGUI extends JFrame {
 		}
 
 		panel.add(internetOrders);
-		for(Order order : im.getOrders()) {
-            Item[] items = order.sortedItemsByCostDesc();
-            if(items == null)
-                continue;
-            JLabel label = new JLabel("Заказ из интернета:");
-            label.setFont(new Font("Serif", Font.PLAIN, 16));
-            panel.add(label);
+		for (Order order : im.getOrders()) {
+			Item[] items = order.sortedItemsByCostDesc();
+			if (items == null)
+				continue;
+			JLabel label = new JLabel("Заказ из интернета:");
+			label.setFont(new Font("Serif", Font.PLAIN, 16));
+			panel.add(label);
 
-            for (Item value : items) {
-                JLabel item = new JLabel(value.toString());
-                item.setFont(new Font("Serif", Font.PLAIN, 14));
-                panel.add(item);
-            }
-            double total = order.costTotal();
-            JLabel cost = new JLabel("Цена=" + total + "рублей");
-            cost.setFont(new Font("Serif", Font.PLAIN, 14));
-            panel.add(cost);
-            JLabel cst = new JLabel("Заказчик:");
-            cst.setFont(new Font("Serif", Font.PLAIN, 14));
-            JLabel info = new JLabel(order.getCustomer().toString());
-            info.setFont(new Font("Serif", Font.PLAIN, 14));
-            panel.add(cst);
-            panel.add(info);
-        }
+			for (Item value : items) {
+				JLabel item = new JLabel(value.toString());
+				item.setFont(new Font("Serif", Font.PLAIN, 14));
+				panel.add(item);
+			}
+			double total = order.costTotal();
+			JLabel cost = new JLabel("Цена=" + total + "рублей");
+			cost.setFont(new Font("Serif", Font.PLAIN, 14));
+			panel.add(cost);
+			JLabel cst = new JLabel("Заказчик:");
+			cst.setFont(new Font("Serif", Font.PLAIN, 14));
+			JLabel info = new JLabel(order.getCustomer().toString());
+			info.setFont(new Font("Serif", Font.PLAIN, 14));
+			panel.add(cst);
+			panel.add(info);
+		}
 
 		main.add(panel);
 		JScrollPane scrollPane = new JScrollPane(main, ScrollPaneConstants.VERTICAL_SCROLLBAR_AS_NEEDED, ScrollPaneConstants.HORIZONTAL_SCROLLBAR_AS_NEEDED);

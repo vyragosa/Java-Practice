@@ -21,13 +21,13 @@ public class OrderManagerGUI extends JFrame {
 	private final JLabel drinks;
 	private final JLabel dishes;
 	private final JRadioButton[] tables;
-	private ButtonGroup tableButton;
 	private final JTextField[] drinksField;
 	private final JTextField[] dishesField;
 	private final JButton confirm;
 	private final JButton clear;
 	private final JButton back;
 	private final JScrollPane scrollPane;
+	private ButtonGroup tableButton;
 	private JPanel tablesFrame;
 
 	public OrderManagerGUI(JFrame prev, Customer customer, TableOrdersManager tm, InternetOrdersManager im, Order order) {
@@ -146,7 +146,7 @@ public class OrderManagerGUI extends JFrame {
 			}
 
 			if (order instanceof InternetOrder) {
-				new ConfirmOrderGUI(order,OrderManagerGUI.this, customer, 0, tm, im);
+				new ConfirmOrderGUI(order, OrderManagerGUI.this, customer, 0, tm, im);
 				setVisible(false);
 				return;
 			}

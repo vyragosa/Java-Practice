@@ -2,15 +2,13 @@ package Practice30.Viewer;
 
 import Practice30.Model.CustomerInfo.Address;
 import Practice30.Model.CustomerInfo.Customer;
-import Practice30.Model.OrderManager.TableOrdersManager;
 import Practice30.Model.OrderManager.InternetOrdersManager;
+import Practice30.Model.OrderManager.TableOrdersManager;
 
 import javax.swing.*;
 import java.awt.*;
 
 public class CustomerFillGUI extends JFrame {
-	private Customer customer;
-	private Address address;
 	private final JTextField firstName;
 	private final JTextField secondName;
 	private final JTextField age;
@@ -37,6 +35,8 @@ public class CustomerFillGUI extends JFrame {
 	private final JPanel customerPanel;
 	private final JPanel addressPanel;
 	private final JPanel buttonPanel;
+	private Customer customer;
+	private Address address;
 
 	public CustomerFillGUI(TableOrdersManager tm, InternetOrdersManager im) {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -59,7 +59,6 @@ public class CustomerFillGUI extends JFrame {
 		first = new JLabel("Имя:");
 		second = new JLabel("Фамилия:");
 		ageLabel = new JLabel("Возраст:");
-
 
 
 		addressLabel = new JLabel("Адрес:");
@@ -155,7 +154,7 @@ public class CustomerFillGUI extends JFrame {
 					return;
 				customer = Customer.getNotMatureUnknownCustomer();
 			}
-			new OrderChooseGUI(this, customer,tm,im).setVisible(true);
+			new OrderChooseGUI(this, customer, tm, im).setVisible(true);
 			dispose();
 			setVisible(false);
 		});

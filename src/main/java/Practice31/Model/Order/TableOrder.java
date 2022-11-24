@@ -8,8 +8,8 @@ import java.util.Arrays;
 import java.util.Comparator;
 
 public class TableOrder implements Order {
-	private Customer customer;
 	private final Item[] items;
+	private Customer customer;
 	private int size;
 
 	public TableOrder(int size) {
@@ -17,9 +17,10 @@ public class TableOrder implements Order {
 		this.size = 0;
 		customer = null;
 	}
+
 	@Override
 	public boolean add(Item item) throws IllegalTableNumber {
-		if(size == items.length) {
+		if (size == items.length) {
 			throw new IllegalTableNumber();
 		}
 		items[size++] = item;
@@ -63,7 +64,7 @@ public class TableOrder implements Order {
 				for (int j = i; j < size - 1; j++) {
 					items[j] = items[j + 1];
 				}
-				if(--size < 0) {
+				if (--size < 0) {
 					throw new IllegalTableNumber();
 				}
 				return true;
@@ -79,7 +80,7 @@ public class TableOrder implements Order {
 				for (int j = i; j < size - 1; j++) {
 					items[j] = items[j + 1];
 				}
-				if(--size < 0) {
+				if (--size < 0) {
 					throw new IllegalTableNumber();
 				}
 				return true;
@@ -95,7 +96,7 @@ public class TableOrder implements Order {
 				for (int j = i; j < size - 1; j++) {
 					items[j] = items[j + 1];
 				}
-				if(--size < 0) {
+				if (--size < 0) {
 					throw new IllegalTableNumber();
 				}
 			}
@@ -110,7 +111,7 @@ public class TableOrder implements Order {
 				for (int j = i; j < size - 1; j++) {
 					items[j] = items[j + 1];
 				}
-				if(--size < 0) {
+				if (--size < 0) {
 					throw new IllegalTableNumber();
 				}
 			}
@@ -137,7 +138,7 @@ public class TableOrder implements Order {
 
 	@Override
 	public Customer getCustomer() {
-		if(customer == null) {
+		if (customer == null) {
 			return Customer.getNotMatureUnknownCustomer();
 		}
 		return customer;

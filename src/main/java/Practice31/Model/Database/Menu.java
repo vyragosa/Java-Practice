@@ -5,7 +5,7 @@ import Practice31.Model.Menu.Drink;
 import Practice31.Model.Menu.DrinkTypeEnum;
 
 public final class Menu {
-	public static Drink[] drinks = new Drink[] {
+	public static Drink[] drinks = new Drink[]{
 			new Drink(150, "Пиво", "0.5л", DrinkTypeEnum.BEER, 4.5),
 			new Drink(200, "Вино", "0.7л", DrinkTypeEnum.WINE, 12.5),
 			new Drink(250, "Водка", "0.5л", DrinkTypeEnum.VODKA, 40.5),
@@ -26,7 +26,7 @@ public final class Menu {
 			new Drink(1000, "Газированная вода", "0.33л", DrinkTypeEnum.SODA, 0),
 	};
 
-	public static Dish[] dishes = new Dish[] {
+	public static Dish[] dishes = new Dish[]{
 			new Dish(100, "Борщ", "300г"),
 			new Dish(200, "Солянка", "400г"),
 			new Dish(300, "Котлета по-киевски", "200г"),

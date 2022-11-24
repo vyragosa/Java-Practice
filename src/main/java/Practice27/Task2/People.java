@@ -6,6 +6,14 @@ import java.util.Map;
 class People {
 	private Map<String, String> map;
 
+	public static HashMap<String, String> createMap() {
+		HashMap<String, String> map = new HashMap<String, String>();
+		for (int i = 0; i < 10; i++) {
+			map.put("Name" + i, "Surname" + i);
+		}
+		return map;
+	}
+
 	public Map<String, String> getMap() {
 		return map;
 	}
@@ -14,18 +22,10 @@ class People {
 		this.map = map;
 	}
 
-	public static HashMap<String, String> createMap() {
-		HashMap<String, String> map = new HashMap<String, String>();
-		for(int i = 0; i < 10; i++) {
-			map.put("Name" + i, "Surname" + i);
-		}
-		return map;
-	}
-
 	public int getSameFirstNameCount(String name) {
 		int count = 0;
-		for(Map.Entry<String, String> pair : map.entrySet()) {
-			if(pair.getKey().equals(name)) {
+		for (Map.Entry<String, String> pair : map.entrySet()) {
+			if (pair.getKey().equals(name)) {
 				count++;
 			}
 		}
@@ -34,8 +34,8 @@ class People {
 
 	public int getSameLastNameCount(String lastName) {
 		int count = 0;
-		for(Map.Entry<String, String> pair : map.entrySet()) {
-			if(pair.getValue().equals(lastName)) {
+		for (Map.Entry<String, String> pair : map.entrySet()) {
+			if (pair.getValue().equals(lastName)) {
 				count++;
 			}
 		}

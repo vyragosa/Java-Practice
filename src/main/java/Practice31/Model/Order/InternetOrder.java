@@ -9,15 +9,9 @@ import java.util.Comparator;
 
 public class InternetOrder implements Order {
 	private Customer customer;
-	private class ListNode {
-		ListNode next;
-		Item value;
-	}
-
 	private ListNode head;
 	private ListNode tail;
 	private int size;
-
 	public InternetOrder() {
 		this.head = null;
 		this.tail = null;
@@ -87,7 +81,7 @@ public class InternetOrder implements Order {
 		ListNode node = head;
 		ListNode prev = null;
 		for (int i = 0; i < size; i++) {
-			if(node.value.getName().equals(name)) {
+			if (node.value.getName().equals(name)) {
 				return deleteNode(node, prev);
 			}
 			prev = node;
@@ -101,7 +95,7 @@ public class InternetOrder implements Order {
 		ListNode node = head;
 		ListNode prev = null;
 		for (int i = 0; i < size; i++) {
-			if(node.value.getName().equals(item.getName())) {
+			if (node.value.getName().equals(item.getName())) {
 				return deleteNode(node, prev);
 			}
 			prev = node;
@@ -111,10 +105,10 @@ public class InternetOrder implements Order {
 	}
 
 	private boolean deleteNode(ListNode node, ListNode prev) {
-		if(size == 1) {
+		if (size == 1) {
 			head = null;
 			tail = null;
-		} else if(prev == null) {
+		} else if (prev == null) {
 			head = node.next;
 			tail.next = head;
 		} else if (node == tail) {
@@ -136,7 +130,7 @@ public class InternetOrder implements Order {
 		ListNode prev = null;
 		boolean removed = false;
 		for (int i = 0; i < size; i++) {
-			if(node.value.getName().equals(name)) {
+			if (node.value.getName().equals(name)) {
 				removed = deleteNode(node, prev);
 			}
 			prev = node;
@@ -151,7 +145,7 @@ public class InternetOrder implements Order {
 		ListNode prev = null;
 		boolean removed = false;
 		for (int i = 0; i < size; i++) {
-			if(node.value.getName().equals(item.getName())) {
+			if (node.value.getName().equals(item.getName())) {
 				removed = deleteNode(node, prev);
 			}
 			prev = node;
@@ -180,7 +174,7 @@ public class InternetOrder implements Order {
 
 	@Override
 	public Customer getCustomer() {
-		if(customer == null) {
+		if (customer == null) {
 			return Customer.getNotMatureUnknownCustomer();
 		}
 		return customer;
@@ -206,5 +200,10 @@ public class InternetOrder implements Order {
 				", tail=" + tail +
 				", size=" + size +
 				'}';
+	}
+
+	private class ListNode {
+		ListNode next;
+		Item value;
 	}
 }

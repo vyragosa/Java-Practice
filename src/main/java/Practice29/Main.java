@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class Main {
 
 	public static void main(String[] args) throws IllegalTableNumber, OrderAlreadyAddedException {
-		Item[] menu = new Item[] {
+		Item[] menu = new Item[]{
 				new Drink("Водка", 100, "Водка 40%, 0.7л."),
 				new Drink("Минеральная вода", 60, "Минеральная вода 0.5л."),
 				new Drink("Кофе", 50, "Кофе 0.5л."),

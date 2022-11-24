@@ -4,20 +4,9 @@ import Practice30.Model.Menu.Item;
 import Practice30.Model.Order.Order;
 
 public class InternetOrdersManager implements OrdersManager {
-	private class QueueNode {
-		Order order;
-		QueueNode next;
-		QueueNode prev;
-
-		public QueueNode(Order order) {
-			this.order = order;
-		}
-	}
-
 	private QueueNode head;
 	private QueueNode tail;
 	private int size;
-
 	public InternetOrdersManager() {
 		this.head = null;
 		this.tail = null;
@@ -110,5 +99,15 @@ public class InternetOrdersManager implements OrdersManager {
 				", tail=" + tail +
 				", size=" + size +
 				'}';
+	}
+
+	private class QueueNode {
+		Order order;
+		QueueNode next;
+		QueueNode prev;
+
+		public QueueNode(Order order) {
+			this.order = order;
+		}
 	}
 }

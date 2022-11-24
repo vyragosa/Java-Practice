@@ -1,18 +1,18 @@
 package Practice29;
 
-final class Dish implements Item  {
+final class Dish implements Item {
 	private final String name;
 	private final double price;
 	private final String description;
 
 	public Dish(String name, double price, String description) {
-		if(name == null || name.isEmpty()) {
+		if (name == null || name.isEmpty()) {
 			throw new IllegalArgumentException("Name cannot be null or empty");
 		}
-		if(price < 0) {
+		if (price < 0) {
 			throw new IllegalArgumentException("Price cannot be negative");
 		}
-		if(description == null || description.isEmpty()) {
+		if (description == null || description.isEmpty()) {
 			throw new IllegalArgumentException("Description cannot be null or empty");
 		}
 		this.name = name;

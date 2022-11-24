@@ -3,13 +3,13 @@ package Practice32.Model.CustomerInfo;
 import java.io.Serializable;
 
 public final class Address implements Serializable {
+	private final static Address EMPTY_ADDRESS = new Address(null, 0, null, 0, ' ', 0);
 	private final String cityName;
 	private final int zipCode;
 	private final String streetName;
 	private final int buildingNumber;
 	private final char buildingLetter;
 	private final int apartmentNumber;
-	private final static Address EMPTY_ADDRESS = new Address(null, 0, null, 0, ' ', 0);
 
 	public Address(String cityName, int zipCode, String streetName, int buildingNumber, char buildingLetter, int apartmentNumber) {
 		this.cityName = cityName;
@@ -18,6 +18,10 @@ public final class Address implements Serializable {
 		this.buildingNumber = buildingNumber;
 		this.buildingLetter = buildingLetter;
 		this.apartmentNumber = apartmentNumber;
+	}
+
+	public static Address getEmptyAddress() {
+		return EMPTY_ADDRESS;
 	}
 
 	public String getCityName() {
@@ -42,10 +46,6 @@ public final class Address implements Serializable {
 
 	public int getApartmentNumber() {
 		return apartmentNumber;
-	}
-
-	public static Address getEmptyAddress() {
-		return EMPTY_ADDRESS;
 	}
 
 	@Override

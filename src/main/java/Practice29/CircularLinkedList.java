@@ -1,15 +1,9 @@
 package Practice29;
 
 public class CircularLinkedList<T> {
-	private static class Node<T> {
-		private Node<T> next;
-		private T item;
-	}
-
 	int size;
 	private Node<T> head;
 	private Node<T> tail;
-
 	public CircularLinkedList() {
 		this.size = 0;
 		this.head = null;
@@ -86,5 +80,10 @@ public class CircularLinkedList<T> {
 			node = node.next;
 		}
 		return String.valueOf(sb);
+	}
+
+	private static class Node<T> {
+		private Node<T> next;
+		private T item;
 	}
 }

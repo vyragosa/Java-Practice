@@ -42,12 +42,11 @@ public class ChooseNewOrCloseGUI extends JFrame {
 					"Вы хотите создать нового покупателя?", "Новый покупатель?",
 					JOptionPane.YES_NO_OPTION) == JOptionPane.YES_OPTION) {
 				new CustomerFillGUI(tm, im).setVisible(true);
-			}
-			else {
+			} else {
 				new OrderChooseGUI(ChooseNewOrCloseGUI.this, customer, tm, im).setVisible(true);
 			}
 		});
-		exit.addActionListener(e ->  {
+		exit.addActionListener(e -> {
 			try {
 				WriteObject.write(new OrdersManager[]{tm, im});
 			} catch (IOException ex) {
@@ -60,7 +59,7 @@ public class ChooseNewOrCloseGUI extends JFrame {
 		report.addActionListener(e -> {
 			setVisible(false);
 			dispose();
-			new ReportGUI(this,tm,im).setVisible(true);
+			new ReportGUI(this, tm, im).setVisible(true);
 		});
 		setLocationRelativeTo(null);
 	}

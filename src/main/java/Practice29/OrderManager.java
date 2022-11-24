@@ -34,6 +34,7 @@ public class OrderManager {
 				.filter(order -> order instanceof InternetOrder)
 				.toArray(Order[]::new);
 	}
+
 	Order[] getRestaurantOrders() {
 		return Arrays.stream(orders.values().toArray())
 				.filter(order -> order instanceof RestaurantOrder)
@@ -44,6 +45,7 @@ public class OrderManager {
 		return orders.values().stream().filter(order -> order instanceof InternetOrder)
 				.mapToInt(order -> order.getQuantity(itemName)).sum();
 	}
+
 	public int internetQuantity() {
 		return orders.values().stream().filter(order -> order instanceof InternetOrder)
 				.mapToInt(Order::getQuantity).sum();

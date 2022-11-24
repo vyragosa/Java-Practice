@@ -18,6 +18,7 @@ public class ConfirmOrderGUI extends JFrame {
 	private final JButton back;
 	private final JButton cancel;
 	private final JButton confirm;
+
 	public ConfirmOrderGUI(Order order, JFrame prev, Customer customer, int tableNum, TableOrdersManager tm, InternetOrdersManager im) {
 		setTitle("Ваш заказ");
 		setSize(580, 600);
@@ -56,10 +57,9 @@ public class ConfirmOrderGUI extends JFrame {
 		add(cancel);
 
 		confirm.addActionListener(e -> {
-			if(order instanceof InternetOrder) {
+			if (order instanceof InternetOrder) {
 				im.add(order);
-			}
-			else {
+			} else {
 				try {
 					tm.add(order, tableNum);
 				} catch (IllegalTableNumber ex) {
@@ -69,7 +69,7 @@ public class ConfirmOrderGUI extends JFrame {
 			}
 			setVisible(false);
 			dispose();
-			new ChooseNewOrCloseGUI(customer,tm,im).setVisible(true);
+			new ChooseNewOrCloseGUI(customer, tm, im).setVisible(true);
 		});
 
 
@@ -84,7 +84,7 @@ public class ConfirmOrderGUI extends JFrame {
 			setVisible(false);
 			dispose();
 			JOptionPane.showMessageDialog(getContentPane(), "Заказ отменен");
-			new ChooseNewOrCloseGUI(customer,tm,im).setVisible(true);
+			new ChooseNewOrCloseGUI(customer, tm, im).setVisible(true);
 		});
 		setLocationRelativeTo(null);
 		setVisible(true);

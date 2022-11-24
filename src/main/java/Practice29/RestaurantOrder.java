@@ -4,8 +4,8 @@ import java.util.Arrays;
 import java.util.Comparator;
 
 public class RestaurantOrder implements Order {
-	private Item[] items;
 	int size;
+	private Item[] items;
 
 	RestaurantOrder(int size) {
 		items = new Item[size];
@@ -19,7 +19,7 @@ public class RestaurantOrder implements Order {
 
 	@Override
 	public boolean add(Item item) throws IllegalTableNumber {
-		if(size == items.length) {
+		if (size == items.length) {
 			throw new IllegalTableNumber();
 		}
 		items[size++] = item;
@@ -33,7 +33,7 @@ public class RestaurantOrder implements Order {
 				for (int j = i; j < size - 1; j++) {
 					items[j] = items[j + 1];
 				}
-				if(--size < 0) {
+				if (--size < 0) {
 					throw new IllegalTableNumber();
 				}
 			}
