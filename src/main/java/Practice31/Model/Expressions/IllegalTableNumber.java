@@ -2,7 +2,7 @@ package Practice31.Model.Expressions;
 
 public class IllegalTableNumber extends Exception {
 	public IllegalTableNumber() {
-		super("Illegal table number");
+		super("Неверный номер столика");
 	}
 
 	public IllegalTableNumber(String message) {
