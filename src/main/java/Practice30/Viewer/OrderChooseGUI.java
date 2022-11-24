@@ -6,8 +6,8 @@ import Practice30.Model.CustomerInfo.Customer;
 import Practice30.Model.Database.RestaurantInfo;
 import Practice30.Model.Order.InternetOrder;
 import Practice30.Model.Order.TableOrder;
-import Practice30.Model.OrderManager.TableOrdersManager;
 import Practice30.Model.OrderManager.InternetOrdersManager;
+import Practice30.Model.OrderManager.TableOrdersManager;
 
 import javax.swing.*;
 import java.awt.*;

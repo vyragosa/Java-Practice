@@ -6,13 +6,13 @@ public abstract class MenuItem implements Item {
 	private final String description;
 
 	public MenuItem(String name, double price, String description) {
-		if(name == null || name.isEmpty()) {
+		if (name == null || name.isEmpty()) {
 			throw new IllegalArgumentException("Name cannot be null or empty");
 		}
-		if(price < 0) {
+		if (price < 0) {
 			throw new IllegalArgumentException("Price cannot be negative");
 		}
-		if(description == null || description.isEmpty()) {
+		if (description == null || description.isEmpty()) {
 			throw new IllegalArgumentException("Description cannot be null or empty");
 		}
 		this.name = name;
